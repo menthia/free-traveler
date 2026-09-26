@@ -1,0 +1,16 @@
+# format:check은 src/tests/루트 설정 파일/.github/workflows만 검사한다.
+# 요구사항·Task·Wave 등 계획 문서는 Prettier 대상이 아니다(이 파일은 그 의도를 명시하는 보강 장치다).
+node_modules
+.next
+out
+build
+coverage
+public
+
+docs/
+TASKS/
+design-reference/
+AGENTS.md
+README.md
+CLAUDE.md
+package-lock.json
