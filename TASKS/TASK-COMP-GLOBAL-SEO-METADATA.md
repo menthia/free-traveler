@@ -38,14 +38,13 @@
 ## Expected Files
 
 - src/lib/seo.ts (신규)
-- 각 page.tsx의 generateMetadata (수정)
 
-**이 Task는 위 목록 밖의 어떤 파일도 생성·수정하지 않는다.**
+**이 Task는 위 목록 밖의 어떤 파일도 생성·수정하지 않는다.** (각 Screen의 `page.tsx`에 실제로 `generateMetadata`를 추가하는 것은 해당 Page Owner Task — `PAGE-SCR001`~`PAGE-SCR005` — 의 책임이다. 이 Task는 그 Page Owner Task들이 import해 쓸 재사용 가능한 유틸만 만든다. `PAGE-SCR001`~`PAGE-SCR005`가 모두 이 Task를 `Depends On`에 명시하고 있으므로, 이 Task는 5개 Page Owner보다 반드시 먼저 완료되어야 한다 — Expected Files를 "각 page.tsx 수정"으로 두면 아직 존재하지 않는 4개 Screen의 Page Entry를 이 Task가 선행해서 고쳐야 하는 모순이 생겨 수정한다.)
 
 ## Functional AC
 
-1. 5개 Screen 각각 고유한 title, description, canonical, Open Graph 값을 생성한다.
-2. 필수 메타 필드 누락 시 빌드 경고를 출력한다.
+1. Screen ID(또는 route)를 입력받아 title, description, canonical, Open Graph 값을 생성하는 함수(예: `buildScreenMetadata(screenId)`)를 `src/lib/seo.ts`에 export한다. 5개 Screen(SCR-001~005) 각각에 대해 서로 다른 값을 반환하도록 5개 Screen의 설정을 유틸 내부(또는 별도 상수)에 포함한다.
+2. 필수 메타 필드(title/description/canonical) 중 하나라도 빈 값이면 개발 환경에서 콘솔 경고를 출력한다.
 
 ## Visual AC
 
@@ -57,8 +56,8 @@
 
 ## Test Cases
 
-- TC-01: 5개 Screen 각각 고유한 title, description, canonical, Open Graph 값을 생성한다.
-- TC-02: 필수 메타 필드 누락 시 빌드 경고를 출력한다.
+- TC-01: SCR-001~005 각 Screen ID로 유틸을 호출하면 서로 다른 title/description/canonical/OG 값을 반환한다.
+- TC-02: 필수 필드(title/description/canonical) 중 하나가 빈 값인 설정으로 호출하면 콘솔 경고가 출력된다.
 
 ## Verify
 

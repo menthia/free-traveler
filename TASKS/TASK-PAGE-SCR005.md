@@ -69,6 +69,7 @@ SCR-005(`/account`, 계정·관리) 화면을 실제 Next.js Route Page로 조�
 5. 차트·그래프·KPI 대시보드를 어디에도 포함하지 않는다(간단한 카드·리스트만 사용).
 6. Lorem ipsum·'준비 중'·'정보 확인 필요' 문구나 내용 없는 빈 Card를 두지 않으며, 목록형 데이터가 없으면 완성형 Empty State를 표시한다.
 7. 프로필·내 활동·관리자 신고 큐·외부 URL 설정은 모두 Supabase(Auth/DB-ACCESS) 조회에 의존하므로 `design-reference/D-001/DESIGN.md` §13 상태 규칙을 따른다: 조회 중 카드 스켈레톤(Loading), 조회·저장 실패 시 실패 사유+재시도 CTA(Error)를 각각 Empty State와 구분해 표시한다. Guest 뷰의 로그인/가입 폼은 제출 중 버튼 내 스피너(Loading), 실패 시 필드 오류(Error)를 표시한다.
+8. `src/lib/seo.ts`(COMP-GLOBAL-SEO-METADATA)의 유틸을 사용해 SCR-005 고유의 `generateMetadata`를 export한다.
 
 ## Visual AC
 
@@ -88,6 +89,7 @@ SCR-005(`/account`, 계정·관리) 화면을 실제 Next.js Route Page로 조�
 - TC-06: Lorem ipsum·'준비 중'·'정보 확인 필요' 문구나 내용 없는 빈 Card를 두지 않으며, 목록형 데이터가 없으면 완성형 Empty State를 표시한다.
 - TC-07: 프로필·내 활동·관리자 영역에서 조회 중 Loading, 실패 시 재시도 CTA가 있는 Error 상태를 확인하고, Guest 로그인/가입 제출 중 Loading·실패 시 Error를 확인한다.
 - TC-08: 1440px Desktop과 390px Mobile 두 뷰포트에서 모두 위 Functional AC를 재확인한다.
+- TC-09: `src/app/account/page.tsx`가 `generateMetadata`를 export하고, `src/lib/seo.ts` 유틸을 사용해 SCR-005 고유 값을 반환한다.
 
 ## Verify
 

@@ -62,6 +62,7 @@ SCR-002(`/about`, 대표 소개) 화면을 실제 Next.js Route Page로 조립�
 3. 각 Section 최소 콘텐츠 수(Timeline 6, Gallery 8, 방문 국가 30, 기억에 남는 여행지 4)를 반드시 충족한다.
 4. Desktop 콘텐츠 최대 폭 1200~1280px, Section 상하 여백 64~96px(Mobile 40~64px).
 5. 이 화면의 모든 Section은 `DATA-REPRESENTATIVE` 정적 데이터만 사용해 Server Component로 렌더링하므로 런타임 네트워크 조회가 없다 — `design-reference/D-001/DESIGN.md` §13의 Loading/Error 상태는 적용 대상이 아니다(정적 데이터 자체가 누락되면 §7 콘텐츠 완전성 검증(DATA-CONTENT-COMPLETENESS-CHECK)에서 빌드 이전에 걸러진다).
+6. `src/lib/seo.ts`(COMP-GLOBAL-SEO-METADATA)의 유틸을 사용해 SCR-002 고유의 `generateMetadata`를 export한다.
 
 ## Visual AC
 
@@ -80,6 +81,7 @@ SCR-002(`/about`, 대표 소개) 화면을 실제 Next.js Route Page로 조립�
 - TC-04: Desktop 콘텐츠 최대 폭 1200~1280px, Section 상하 여백 64~96px(Mobile 40~64px).
 - TC-05: 이 화면에 런타임 네트워크 조회(로그인 필요 데이터·Supabase 조회 등)가 없음을 코드 리뷰로 확인한다(Loading/Error 상태 불필요).
 - TC-06: 1440px Desktop과 390px Mobile 두 뷰포트에서 모두 위 Functional AC를 재확인한다.
+- TC-07: `src/app/about/page.tsx`가 `generateMetadata`를 export하고, `src/lib/seo.ts` 유틸을 사용해 SCR-002 고유 값을 반환한다.
 
 ## Verify
 

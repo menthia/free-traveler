@@ -65,6 +65,7 @@ SCR-004(`/mates`, 동행 조회) 화면을 실제 Next.js Route Page로 조립�
 3. 목록 Empty State는 필터 결과 없음/전체 없음을 구분해 각각 이용 방법+CTA를 포함한 완성형으로 표시한다.
 4. Lorem ipsum·'준비 중'·'정보 확인 필요' 문구나 내용 없는 빈 Card를 두지 않는다.
 5. 동행글 목록·상세·참가·신고·차단은 모두 API-MATES-CRUD/API-APPLICATIONS/API-REPORTS/API-BLOCKS 조회·제출에 의존하므로 `design-reference/D-001/DESIGN.md` §13 상태 규칙을 따른다: 조회 중 카드 스켈레톤(Loading), 조회·제출 실패 시 실패 사유+재시도 CTA(Error)를 각각 Empty State와 구분해 표시한다.
+6. `src/lib/seo.ts`(COMP-GLOBAL-SEO-METADATA)의 유틸을 사용해 SCR-004 고유의 `generateMetadata`를 export한다.
 
 ## Visual AC
 
@@ -82,6 +83,7 @@ SCR-004(`/mates`, 동행 조회) 화면을 실제 Next.js Route Page로 조립�
 - TC-04: Lorem ipsum·'준비 중'·'정보 확인 필요' 문구나 내용 없는 빈 Card를 두지 않는다.
 - TC-05: 목록·상세·참가·신고·차단 각각에서 조회 중 Loading, 실패 시 재시도 CTA가 있는 Error 상태를 확인한다.
 - TC-06: 1440px Desktop과 390px Mobile 두 뷰포트에서 모두 위 Functional AC를 재확인한다.
+- TC-07: `src/app/mates/page.tsx`가 `generateMetadata`를 export하고, `src/lib/seo.ts` 유틸을 사용해 SCR-004 고유 값을 반환한다.
 
 ## Verify
 

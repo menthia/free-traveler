@@ -1,7 +1,7 @@
 {
   "schema_version": "traveler-wave-state-v1",
-  "generated_at": "2026-09-26T02:02:50+00:00",
-  "current_wave": "W01",
+  "generated_at": "2026-09-26T03:49:21+00:00",
+  "current_wave": "W03",
   "waves": [
     {
       "wave_id": "W01",
@@ -14,16 +14,16 @@
         "DATA-SAFETY",
         "DATA-REPRESENTATIVE"
       ],
-      "status": "blocked",
+      "status": "completed",
       "checkpoint_required": false,
       "checkpoint_result": "not_required",
       "tasks": {
-        "COMP-GLOBAL-SHELL": "blocked",
-        "COMP-GLOBAL-SEO-METADATA": "pending",
-        "COMP-GLOBAL-TOAST": "pending",
-        "DATA-DESTINATIONS": "pending",
-        "DATA-SAFETY": "pending",
-        "DATA-REPRESENTATIVE": "pending"
+        "COMP-GLOBAL-SHELL": "done",
+        "COMP-GLOBAL-SEO-METADATA": "done",
+        "COMP-GLOBAL-TOAST": "done",
+        "DATA-DESTINATIONS": "done",
+        "DATA-SAFETY": "done",
+        "DATA-REPRESENTATIVE": "done"
       }
     },
     {
@@ -36,9 +36,16 @@
         "API-DATE-VALIDATION-UTIL",
         "API-ERROR-PAGES"
       ],
-      "status": "pending",
+      "status": "completed",
       "checkpoint_required": false,
-      "checkpoint_result": "not_required"
+      "checkpoint_result": "not_required",
+      "tasks": {
+        "DATA-POLICY-CONTENT": "done",
+        "DATA-CONTENT-COMPLETENESS-CHECK": "done",
+        "API-CONTACT-DETECTION-UTIL": "done",
+        "API-DATE-VALIDATION-UTIL": "done",
+        "API-ERROR-PAGES": "done"
+      }
     },
     {
       "wave_id": "W03",
@@ -52,9 +59,18 @@
         "API-AUTH-CALLBACK",
         "API-MATE-AUTOCLOSE"
       ],
-      "status": "pending",
+      "status": "blocked",
       "checkpoint_required": false,
-      "checkpoint_result": "not_required"
+      "checkpoint_result": "not_required",
+      "tasks": {
+        "INFRA-SUPABASE-PROJECT": "blocked",
+        "DB-SCHEMA-BASE": "pending",
+        "DB-RLS-BASE": "pending",
+        "DB-ACCESS": "pending",
+        "DB-SEED-BASE": "pending",
+        "API-AUTH-CALLBACK": "pending",
+        "API-MATE-AUTOCLOSE": "pending"
+      }
     },
     {
       "wave_id": "W04",

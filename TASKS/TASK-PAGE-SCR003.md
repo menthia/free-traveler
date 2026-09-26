@@ -75,6 +75,7 @@ SCR-003(`/travel-tools`, 통합 여행 준비) 화면을 실제 Next.js Route Pa
 4. 안전정보 요약 고지(REQ-FUNC-054)를 항공 요약 단계에도 표시한다.
 5. Lorem ipsum·'준비 중'·'정보 확인 필요' 문구나 내용 없는 빈 Card를 두지 않는다. 동행 탭의 비로그인 상태는 완성형 안내 Card(설명+CTA)로 처리하며 빈 화면으로 보이지 않게 한다.
 6. 동행 탭은 `design-reference/D-001/DESIGN.md` §13 상태 규칙을 따른다: 로그인·성인 확인 상태 조회 중에는 Loading(버튼/카드 내 스피너), 동행글 제출(API-MATES-CRUD POST) 실패 시 실패 사유+재시도 CTA를 포함한 Error를 표시한다. 항공·숙소 탭은 서버 조회가 없는 클라이언트 로컬 폼이므로 이 상태가 적용되지 않는다(입력 검증 오류는 필드별 오류 메시지로 별도 처리).
+7. `src/lib/seo.ts`(COMP-GLOBAL-SEO-METADATA)의 유틸을 사용해 SCR-003 고유의 `generateMetadata`를 export한다.
 
 ## Visual AC
 
@@ -93,6 +94,7 @@ SCR-003(`/travel-tools`, 통합 여행 준비) 화면을 실제 Next.js Route Pa
 - TC-05: Lorem ipsum·'준비 중'·'정보 확인 필요' 문구나 내용 없는 빈 Card를 두지 않는다. 동행 탭의 비로그인 상태는 완성형 안내 Card(설명+CTA)로 처리하며 빈 화면으로 보이지 않게 한다.
 - TC-06: 동행 탭에서 로그인/성인확인 조회 중 Loading, 동행글 제출 실패 시 재시도 CTA가 있는 Error 상태를 각각 확인한다.
 - TC-07: 1440px Desktop과 390px Mobile 두 뷰포트에서 모두 위 Functional AC를 재확인한다.
+- TC-08: `src/app/travel-tools/page.tsx`가 `generateMetadata`를 export하고, `src/lib/seo.ts` 유틸을 사용해 SCR-003 고유 값을 반환한다.
 
 ## Verify
 

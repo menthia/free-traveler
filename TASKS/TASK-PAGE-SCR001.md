@@ -77,6 +77,7 @@ SCR-001(`/`, 여행지 탐색) 화면을 실제 Next.js Route Page로 조립하�
 5. 어떤 Section에도 Lorem ipsum, '준비 중', '정보 확인 필요', 내용 없는 빈 Card를 두지 않는다.
 6. 최근 동행글 Section은 데이터가 없을 때도 설명 문장+이용 방법+CTA를 모두 갖춘 완성형 Empty State를 표시한다.
 7. 최근 동행글 Section(API-MATES-CRUD 조회)은 `design-reference/D-001/DESIGN.md` §13 상태 규칙을 따른다: 조회 중에는 카드 스켈레톤(Loading), 조회 실패 시 실패 사유 설명 문장+재시도 CTA(Error)를 표시하며, 두 상태 모두 데이터 없음(Empty)과 시각적으로 구분된다. 나머지 Section(정적 데이터 기반)은 빌드 시점에 데이터가 확정되므로 별도 Loading 상태가 필요하지 않다.
+8. `src/lib/seo.ts`(COMP-GLOBAL-SEO-METADATA)의 유틸을 사용해 SCR-001 고유의 `generateMetadata`를 export한다.
 
 ## Visual AC
 
@@ -97,6 +98,7 @@ SCR-001(`/`, 여행지 탐색) 화면을 실제 Next.js Route Page로 조립하�
 - TC-06: 최근 동행글 Section은 데이터가 없을 때도 설명 문장+이용 방법+CTA를 모두 갖춘 완성형 Empty State를 표시한다.
 - TC-07: 최근 동행글 Section 조회 중 Loading 스켈레톤, 조회 실패 시 재시도 CTA가 있는 Error 상태를 각각 확인한다(Empty 상태와 시각적으로 구분).
 - TC-08: 1440px Desktop과 390px Mobile 두 뷰포트에서 모두 위 Functional AC를 재확인한다.
+- TC-09: `src/app/page.tsx`가 `generateMetadata`를 export하고, `src/lib/seo.ts` 유틸을 사용해 SCR-001 고유 값을 반환한다.
 
 ## Verify
 
