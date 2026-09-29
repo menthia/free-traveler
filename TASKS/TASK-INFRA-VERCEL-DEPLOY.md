@@ -37,8 +37,11 @@
 
 ## Expected Files
 
-- vercel.json (신규, 필요 시)
+- vercel.json (신규, 필요 시 — 실제로는 Next.js zero-config 배포로 충분해 생성하지
+  않음: 별도 Build Command·Region·Function 설정이 필요하지 않다)
 - .env.example (신규)
+- .gitignore (수정 — 구현 중 발견: `.env*`가 `.env.example`까지 무시해 새로 만든
+  예시 파일이 Git에 잡히지 않았다. `!.env.example` 예외 한 줄만 추가한다.)
 
 **이 Task는 위 목록 밖의 어떤 파일도 생성·수정하지 않는다.**
 

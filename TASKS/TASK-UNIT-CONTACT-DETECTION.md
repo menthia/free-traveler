@@ -37,6 +37,9 @@
 ## Expected Files
 
 - src/lib/contact-detection.test.ts (신규)
+- src/lib/contact-detection.ts (수정 — 테스트 작성 중 발견: "카카오톡 아이디는 abc123"처럼
+  "아이디" 뒤에 조사(는/를/가 등)가 붙는 자연스러운 한국어 문장에서 메신저 ID 탐지가
+  실패했다. 라벨 뒤 0~3자의 한글 조사를 허용하도록 정규식을 보정한다)
 
 **이 Task는 위 목록 밖의 어떤 파일도 생성·수정하지 않는다.**
 

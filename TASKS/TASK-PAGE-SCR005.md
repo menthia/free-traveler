@@ -57,6 +57,13 @@ SCR-005(`/account`, 계정·관리) 화면을 실제 Next.js Route Page로 조�
 ## Expected Files
 
 - src/app/account/page.tsx (신규)
+- src/components/account/AccountPageSections.tsx (신규 — Page Owner는 `generateMetadata`를
+  export해야 해서 Server Component여야 하지만, Guest/Member/Admin 역할 판별과 탭 전환은
+  Client state가 필요하다. PAGE-SCR003/PAGE-SCR004와 동일한 선례 패턴 — 새 UI를 설계하지
+  않고 이미 만들어진 GuestAuthForm/ProfileSummaryCard/AdultVerificationCard/
+  PolicyConsentStatus/MyActivityLists/AdminReportQueue/AdminExternalUrlForm만 조립하며,
+  어떤 Component Task도 담당하지 않는 로그아웃 버튼·기능 Chip 목록·보안 안내 문구·역할별
+  탭 전환만 이 안에서 직접 처리한다)
 
 **이 Task는 위 목록 밖의 어떤 파일도 생성·수정하지 않는다.**
 

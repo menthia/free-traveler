@@ -44,10 +44,11 @@ SCR-001(`/`, 여행지 탐색) 내부에서 재사용되는 UI 조각 '국가별
 
 ## Expected Files
 
+- src/data/safety.ts (수정 — `advisoryLevel`, `scopeText` 필드 추가)
 - src/components/home/CountrySafetyCardGrid.tsx (신규)
 - src/components/home/SafetyDrawer.tsx (신규)
 
-**이 Task는 위 목록 밖의 어떤 파일도 생성·수정하지 않는다.**
+**이 Task는 위 목록 밖의 어떤 파일도 생성·수정하지 않는다.** (`DATA-SAFETY`가 만든 `CountrySafetyInfo`에는 "중대 경보 텍스트 라벨"(Functional AC 3)과 "국가 전체·지역 경보 범위 구분 텍스트"(Functional AC 4)를 표시할 필드가 없었다 — 이 Component가 그 값을 실제로 렌더링하는 첫 지점이라 여기서 함께 추가한다. 기존 6개 필드(security/scam/... 등)와 `scopeType`은 그대로 두고 2개 필드만 보강한다.)
 
 ## Functional AC
 

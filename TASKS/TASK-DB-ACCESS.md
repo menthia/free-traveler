@@ -40,12 +40,16 @@ Supabase PostgreSQL에 '데이터 접근 레이어(Server Actions/Query 함수)'
 
 ## Expected Files
 
+- package.json (수정 — `@supabase/supabase-js`, `@supabase/ssr` 의존성 추가)
+- package-lock.json (수정)
+- src/lib/supabase/client.ts (신규)
+- src/lib/supabase/server.ts (신규)
 - src/lib/db/mates.ts (신규)
 - src/lib/db/applications.ts (신규)
 - src/lib/db/blocks.ts (신규)
 - src/lib/db/reports.ts (신규)
 
-**이 Task는 위 목록 밖의 어떤 파일도 생성·수정하지 않는다.**
+**이 Task는 위 목록 밖의 어떤 파일도 생성·수정하지 않는다.** (`src/lib/supabase/client.ts`/`server.ts`는 `docs/ARCHITECTURE.md` §7.1이 지정한 위치이지만 이를 만드는 Task가 없었다 — `src/lib/db/*.ts`가 실제로 이 Client를 사용하는 첫 지점이므로 여기서 함께 만든다. `@supabase/supabase-js`/`@supabase/ssr` 의존성도 이 저장소에 아직 설치되어 있지 않아 함께 추가한다. 이후 `API-AUTH-CALLBACK`, `COMP-SCR005-GUEST-AUTH` 등 Supabase Client가 필요한 다른 Task는 이 두 파일을 새로 만들지 않고 import해서 재사용한다.)
 
 ## Functional AC
 

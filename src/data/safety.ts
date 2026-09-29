@@ -1,5 +1,8 @@
 export type SafetyScopeType = "COUNTRY" | "REGION";
 
+/** 외교부 해외안전여행 4단계 여행경보(색상만이 아닌 텍스트 라벨로 항상 병기한다). */
+export type TravelAdvisoryLevel = "여행유의" | "여행자제" | "출국권고" | "여행금지";
+
 export interface SafetySource {
   name: string;
   url: string;
@@ -13,6 +16,10 @@ export interface CountrySafetyInfo {
   id: string;
   countryName: string;
   scopeType: SafetyScopeType;
+  /** 여행경보 단계(텍스트 라벨). */
+  advisoryLevel: TravelAdvisoryLevel;
+  /** 경보 적용 범위 설명 — 국가 전체("국가 전체")인지 특정 지역("~ 지역")인지 텍스트로 구분한다. */
+  scopeText: string;
   /** 치안 — 소매치기, 강력범죄, 위험 지역 등. */
   security: string;
   /** 사기 — 관광객 대상 흔한 사기 수법. */
@@ -46,6 +53,8 @@ export const COUNTRY_SAFETY_INFO: CountrySafetyInfo[] = [
     id: "japan",
     countryName: "일본",
     scopeType: "COUNTRY",
+    advisoryLevel: "여행유의",
+    scopeText: "국가 전체",
     security:
       "전반적으로 치안이 매우 우수하나, 도쿄 카부키초·오사카 도톤보리 등 유흥가에서는 호객꾼과 바가지 요금에 주의해야 한다.",
     scam: "길거리 호객(캐치)을 따라가 고액 청구를 받는 바 사기와, SNS로 접근해 선물·투자 유도 사기가 간혹 발생한다.",
@@ -65,6 +74,8 @@ export const COUNTRY_SAFETY_INFO: CountrySafetyInfo[] = [
     id: "thailand",
     countryName: "태국",
     scopeType: "COUNTRY",
+    advisoryLevel: "여행유의",
+    scopeText: "국가 전체",
     security:
       "관광지는 대체로 안전하나 방콕 카오산로드·파타야 유흥가에서는 소매치기와 취객 대상 절도가 발생할 수 있다.",
     scam: "보석·투어 바가지 판매(투크투크 기사 연계), 위조 여행사 티켓 판매 등 관광객 대상 사기가 흔하다.",
@@ -82,6 +93,8 @@ export const COUNTRY_SAFETY_INFO: CountrySafetyInfo[] = [
     id: "vietnam",
     countryName: "베트남",
     scopeType: "COUNTRY",
+    advisoryLevel: "여행유의",
+    scopeText: "국가 전체",
     security:
       "전반적으로 안전하나 대도시 관광지에서는 오토바이를 이용한 날치기와 소매치기에 유의해야 한다.",
     scam: "환전 시 위폐·부족 지급, 택시 미터기 조작 등의 사례가 있어 공식 환전소와 신뢰할 수 있는 택시 브랜드 이용을 권장한다.",
@@ -100,6 +113,8 @@ export const COUNTRY_SAFETY_INFO: CountrySafetyInfo[] = [
     id: "taiwan",
     countryName: "대만",
     scopeType: "COUNTRY",
+    advisoryLevel: "여행유의",
+    scopeText: "국가 전체",
     security:
       "치안이 매우 우수한 편으로 심야 시간대에도 비교적 안전하지만, 관광지 소매치기는 기본적인 주의가 필요하다.",
     scam: "관광객 대상 고가 요금 청구나 가짜 국제운전면허 대행 등의 소규모 사기가 드물게 보고된다.",
@@ -116,6 +131,8 @@ export const COUNTRY_SAFETY_INFO: CountrySafetyInfo[] = [
     id: "singapore",
     countryName: "싱가포르",
     scopeType: "COUNTRY",
+    advisoryLevel: "여행유의",
+    scopeText: "국가 전체",
     security: "세계적으로 치안이 우수한 국가로 꼽히며, 강력범죄 발생률이 매우 낮다.",
     scam: "관광객을 노린 대규모 사기는 드물지만, 온라인 쇼핑·투자 사기에 대한 주의 안내가 있다.",
     law: "껌 반입·판매, 무단횡단, 쓰레기 투기 등 경범죄에도 높은 벌금이 부과되며 마약류는 사형까지 가능한 중범죄다.",
@@ -132,6 +149,8 @@ export const COUNTRY_SAFETY_INFO: CountrySafetyInfo[] = [
     id: "france",
     countryName: "프랑스",
     scopeType: "COUNTRY",
+    advisoryLevel: "여행유의",
+    scopeText: "국가 전체",
     security:
       "파리 등 대도시 관광지·대중교통에서 소매치기가 매우 빈번하니 소지품 관리에 각별히 유의해야 한다.",
     scam: "가짜 서명 요청(청원서) 후 소매치기, 팔찌 강매 등 관광객을 노린 수법이 유명 관광지에 흔하다.",
@@ -147,6 +166,8 @@ export const COUNTRY_SAFETY_INFO: CountrySafetyInfo[] = [
     id: "italy",
     countryName: "이탈리아",
     scopeType: "COUNTRY",
+    advisoryLevel: "여행유의",
+    scopeText: "국가 전체",
     security: "로마·밀라노 등 대도시 관광지와 대중교통에서 소매치기·날치기가 빈번하게 발생한다.",
     scam: "가짜 경찰을 사칭한 소지품 검사 사기, 레스토랑 자릿세(코페르토) 미고지 등이 흔한 사례다.",
     law: "주요 유적지 낙서·훼손 행위는 고액 벌금 대상이며, 일부 해변은 지정 구역 외 취사가 제한된다.",
@@ -162,6 +183,8 @@ export const COUNTRY_SAFETY_INFO: CountrySafetyInfo[] = [
     id: "spain",
     countryName: "스페인",
     scopeType: "COUNTRY",
+    advisoryLevel: "여행유의",
+    scopeText: "국가 전체",
     security: "바르셀로나 람블라스거리 등 관광 밀집 구역에서 소매치기 발생률이 높은 편이다.",
     scam: "택시 바가지 요금, 꽃·팔찌 강매 후 금전 요구 등의 수법이 관광지에 흔하다.",
     law: "공공장소 음주는 지역에 따라 제한되며, 투우 등 전통 행사 관람 시 현지 규정을 따른다.",
@@ -176,6 +199,8 @@ export const COUNTRY_SAFETY_INFO: CountrySafetyInfo[] = [
     id: "united-kingdom",
     countryName: "영국",
     scopeType: "COUNTRY",
+    advisoryLevel: "여행유의",
+    scopeText: "국가 전체",
     security: "전반적으로 치안이 양호하나 런던 일부 지역과 대중교통에서 소매치기가 발생할 수 있다.",
     scam: "가짜 자선단체 서명 요청, 노상 카드 게임(속임수 도박) 등 관광객 대상 사기에 유의한다.",
     law: "공공장소 음주는 일부 구역에서 제한되며, 대중교통 무임승차는 고액 벌금 대상이다.",
@@ -191,6 +216,8 @@ export const COUNTRY_SAFETY_INFO: CountrySafetyInfo[] = [
     id: "united-states",
     countryName: "미국",
     scopeType: "COUNTRY",
+    advisoryLevel: "여행유의",
+    scopeText: "국가 전체",
     security:
       "도시별 치안 편차가 크며, 대도시 일부 구역은 야간 이동을 피하고 대중교통 이용 시 소지품에 유의한다.",
     scam: "가짜 자선 모금, 렌터카 보험 강매 등 관광객을 노린 수법이 있어 계약 내용을 꼼꼼히 확인한다.",
@@ -209,6 +236,8 @@ export const COUNTRY_SAFETY_INFO: CountrySafetyInfo[] = [
     id: "australia",
     countryName: "호주",
     scopeType: "COUNTRY",
+    advisoryLevel: "여행유의",
+    scopeText: "국가 전체",
     security:
       "전반적으로 치안이 우수하나 시드니·멜버른 유흥가 심야 시간대는 취객 관련 사건에 유의한다.",
     scam: "렌터카 반납 시 과도한 손상 청구, 투어 예약 사기 등에 유의해야 한다.",
@@ -227,6 +256,8 @@ export const COUNTRY_SAFETY_INFO: CountrySafetyInfo[] = [
     id: "new-zealand",
     countryName: "뉴질랜드",
     scopeType: "COUNTRY",
+    advisoryLevel: "여행유의",
+    scopeText: "국가 전체",
     security: "전반적으로 치안이 매우 우수하며 강력범죄 발생률이 낮은 편이다.",
     scam: "렌터카 관련 소규모 분쟁 외에 큰 사기 사례는 드물지만 계약 조건을 꼼꼼히 확인한다.",
     law: "자연보호구역 반출입 규정이 엄격하며, 하이킹 시 지정 탐방로를 벗어나면 처벌될 수 있다.",
@@ -242,6 +273,8 @@ export const COUNTRY_SAFETY_INFO: CountrySafetyInfo[] = [
     id: "turkey",
     countryName: "터키",
     scopeType: "COUNTRY",
+    advisoryLevel: "여행유의",
+    scopeText: "국가 전체",
     security: "이스탄불 관광지는 비교적 안전하나 대규모 집회·시위 지역은 접근을 피하는 것이 좋다.",
     scam: "카펫 강매, 환전소 바가지 등 관광객 대상 상술이 그랜드바자르 등에서 흔하다.",
     law: "국가 지도자·국기에 대한 모독 행위는 강하게 처벌되며, 군사시설 촬영은 금지되어 있다.",
@@ -256,6 +289,8 @@ export const COUNTRY_SAFETY_INFO: CountrySafetyInfo[] = [
     id: "greece",
     countryName: "그리스",
     scopeType: "COUNTRY",
+    advisoryLevel: "여행유의",
+    scopeText: "국가 전체",
     security: "전반적으로 안전하나 아테네 일부 구역과 대중교통에서 소매치기가 발생할 수 있다.",
     scam: "택시 바가지 요금, 관광지 사진 촬영 강요 후 금전 요구 등의 사례가 있다.",
     law: "고대 유적 훼손·무단 반출은 강하게 처벌되며, 일부 섬은 드론 촬영이 제한된다.",
@@ -270,6 +305,8 @@ export const COUNTRY_SAFETY_INFO: CountrySafetyInfo[] = [
     id: "switzerland",
     countryName: "스위스",
     scopeType: "COUNTRY",
+    advisoryLevel: "여행유의",
+    scopeText: "국가 전체",
     security: "치안이 매우 우수한 국가로 꼽히며, 관광지에서도 강력범죄 발생률이 매우 낮다.",
     scam: "관광객을 노린 대규모 사기 사례는 드물지만 산악 열차·케이블카 티켓 재판매 사기에 유의한다.",
     law: "대중교통 무임승차는 고액 벌금 대상이며, 자연보호구역 캠핑은 지정 장소에서만 허용된다.",

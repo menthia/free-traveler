@@ -39,6 +39,17 @@
 ## Expected Files
 
 - —(체크리스트: TASKS/checklists/a11y.md 신규)
+- src/components/home/DestinationDrawer.tsx, src/components/home/SafetyDrawer.tsx,
+  src/components/mates/MateDetailDrawer.tsx (수정 — 키보드 확인 중 발견:
+  `design-reference/D-001/DESIGN.md` §11이 요구하는 "Esc로 닫기"가 세 Drawer 모두
+  구현되어 있지 않았다. Esc 키 입력 시 `onClose`를 호출하는 최소한의 keydown 핸들러만
+  추가한다(포커스 트랩·포커스 복귀까지의 전체 구현은 이 Task의 IMPLEMENT(변형) 승인
+  범위를 넘으므로 하지 않는다 — 닫기 버튼을 Tab으로 찾아 닫는 것은 이미 가능하다).
+- src/components/home/DestinationCardGrid.tsx (수정 — 사용자가 직접 확인하다 발견: 여행지
+  Card를 Tab으로 포커스해도 포커스 링이 전혀 보이지 않았다. Card 바깥 wrapper에
+  `overflow-hidden`이 있어 안쪽 버튼의 `outline-offset-2`(바깥으로 튀어나오는 링)가 잘려
+  보이지 않던 것이 원인이다. `outline-offset-2`를 `-outline-offset-2`(안쪽 인셋 링)로
+  바꿔 잘리지 않게 고친다.
 
 **이 Task는 위 목록 밖의 어떤 파일도 생성·수정하지 않는다.**
 

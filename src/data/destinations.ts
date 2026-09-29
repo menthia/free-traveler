@@ -38,9 +38,9 @@ const DOMESTIC_DESTINATIONS: Destination[] = [
     sources: [{ name: "서울관광재단", url: "https://korean.visitseoul.net/" }],
     updatedAt: "2026-01-15",
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Gyeongbokgung_in_Seoul_South_Korea.jpg/1280px-Gyeongbokgung_in_Seoul_South_Korea.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Gyeongbokgung_Palace.jpg/1280px-Gyeongbokgung_Palace.jpg",
       alt: "서울 경복궁 근정전과 뒤로 보이는 북악산 전경",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Gyeongbokgung_in_Seoul_South_Korea.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Gyeongbokgung_Palace.jpg",
     },
   },
   {
@@ -87,7 +87,7 @@ const DOMESTIC_DESTINATIONS: Destination[] = [
     sources: [{ name: "부산관광공사", url: "https://www.busan.go.kr/tour" }],
     updatedAt: "2026-01-15",
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Gamcheon_Culture_Village.jpg/1280px-Gamcheon_Culture_Village.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Gamcheon_Culture_Village.jpg/1280px-Gamcheon_Culture_Village.jpg",
       alt: "부산 감천문화마을의 계단식 알록달록한 주택가 전경",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Gamcheon_Culture_Village.jpg",
     },
@@ -129,7 +129,7 @@ const DOMESTIC_DESTINATIONS: Destination[] = [
     sources: [{ name: "제주관광공사", url: "https://ijto.or.kr/korean/" }],
     updatedAt: "2026-01-15",
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Seongsan_Ilchulbong.jpg/1280px-Seongsan_Ilchulbong.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Seongsan_Ilchulbong.jpg/1280px-Seongsan_Ilchulbong.jpg",
       alt: "제주 성산일출봉의 분화구와 해안선 전경",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Seongsan_Ilchulbong.jpg",
     },
@@ -171,9 +171,9 @@ const DOMESTIC_DESTINATIONS: Destination[] = [
     sources: [{ name: "경주시 문화관광", url: "https://www.gyeongju.go.kr/tour/" }],
     updatedAt: "2026-01-15",
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Bulguksa_02.JPG/1280px-Bulguksa_02.JPG",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Bulguksa.jpg/1280px-Bulguksa.jpg",
       alt: "경주 불국사 청운교와 백운교 석조 계단",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Bulguksa_02.JPG",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Bulguksa.jpg",
     },
   },
   {
@@ -215,7 +215,7 @@ const DOMESTIC_DESTINATIONS: Destination[] = [
     sources: [{ name: "강릉시 문화관광", url: "https://www.gn.go.kr/tour/" }],
     updatedAt: "2026-01-15",
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Gyeongpo_Lake.jpg/1280px-Gyeongpo_Lake.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Gyeongpo_Lake.jpg/1280px-Gyeongpo_Lake.jpg",
       alt: "강릉 경포호수와 주변 벚꽃길 풍경",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Gyeongpo_Lake.jpg",
     },
@@ -264,9 +264,9 @@ const DOMESTIC_DESTINATIONS: Destination[] = [
     sources: [{ name: "전주시 문화관광", url: "https://tour.jeonju.go.kr/" }],
     updatedAt: "2026-01-15",
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Jeonju_Hanok_Village.jpg/1280px-Jeonju_Hanok_Village.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Jeonju_Hanok_Village_20230408_007.jpg/1280px-Jeonju_Hanok_Village_20230408_007.jpg",
       alt: "전주한옥마을 기와지붕이 이어진 골목 풍경",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Jeonju_Hanok_Village.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Jeonju_Hanok_Village_20230408_007.jpg",
     },
   },
   {
@@ -301,9 +301,9 @@ const DOMESTIC_DESTINATIONS: Destination[] = [
     sources: [{ name: "여수시 문화관광", url: "https://www.yeosu.go.kr/tour" }],
     updatedAt: "2026-01-15",
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Yeosu_Night_View.jpg/1280px-Yeosu_Night_View.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Yeosu_by_night.jpg/1280px-Yeosu_by_night.jpg",
       alt: "여수 밤바다와 돌산대교의 야간 조명",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Yeosu_Night_View.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Yeosu_by_night.jpg",
     },
   },
   {
@@ -350,9 +350,9 @@ const DOMESTIC_DESTINATIONS: Destination[] = [
     sources: [{ name: "속초시 문화관광", url: "https://tour.sokcho.go.kr/" }],
     updatedAt: "2026-01-15",
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Seoraksan_National_Park.jpg/1280px-Seoraksan_National_Park.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Seoraksan_National_Park_panorama_3.jpg/1280px-Seoraksan_National_Park_panorama_3.jpg",
       alt: "속초 설악산국립공원의 울산바위 전경",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Seoraksan_National_Park.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Seoraksan_National_Park_panorama_3.jpg",
     },
   },
   {
@@ -392,9 +392,9 @@ const DOMESTIC_DESTINATIONS: Destination[] = [
     sources: [{ name: "통영시 문화관광", url: "https://www.utour.go.kr/" }],
     updatedAt: "2026-01-15",
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Dongpirang_Mural_Village.jpg/1280px-Dongpirang_Mural_Village.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Dongpirang_Village_20190511_18.jpg/1280px-Dongpirang_Village_20190511_18.jpg",
       alt: "통영 동피랑벽화마을 골목의 벽화와 바다 전경",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Dongpirang_Mural_Village.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Dongpirang_Village_20190511_18.jpg",
     },
   },
   {
@@ -430,9 +430,9 @@ const DOMESTIC_DESTINATIONS: Destination[] = [
     sources: [{ name: "안동시 문화관광", url: "https://www.andong.go.kr/tour" }],
     updatedAt: "2026-01-15",
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Hahoe_Folk_Village.jpg/1280px-Hahoe_Folk_Village.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Hahoe_Folk_Village_03.jpg/1280px-Hahoe_Folk_Village_03.jpg",
       alt: "안동 하회마을의 전통 기와집과 초가집이 모인 전경",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Hahoe_Folk_Village.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Hahoe_Folk_Village_03.jpg",
     },
   },
 ];
@@ -495,9 +495,10 @@ const OVERSEAS_SEED: OverseasSeed[] = [
     ],
     sources: [{ name: "일본정부관광국(JNTO)", url: "https://www.japan.travel/ko/" }],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Senso-ji_Temple_2016.jpg/1280px-Senso-ji_Temple_2016.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Sensoji_temple%2C_Asakusa%2C_Tokyo%2C_Japan.jpg/1280px-Sensoji_temple%2C_Asakusa%2C_Tokyo%2C_Japan.jpg",
       alt: "도쿄 아사쿠사 센소지 본당과 오층탑",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Senso-ji_Temple_2016.jpg",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Sensoji_temple%2C_Asakusa%2C_Tokyo%2C_Japan.jpg",
     },
   },
   {
@@ -538,9 +539,9 @@ const OVERSEAS_SEED: OverseasSeed[] = [
     ],
     sources: [{ name: "일본정부관광국(JNTO)", url: "https://www.japan.travel/ko/" }],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Osaka_Castle_2016.jpg/1280px-Osaka_Castle_2016.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Osaka_Castle_02bs3200.jpg/1280px-Osaka_Castle_02bs3200.jpg",
       alt: "오사카성 천수각과 주변 해자 전경",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Osaka_Castle_2016.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Osaka_Castle_02bs3200.jpg",
     },
   },
   {
@@ -579,9 +580,10 @@ const OVERSEAS_SEED: OverseasSeed[] = [
     ],
     sources: [{ name: "태국관광청(TAT)", url: "https://www.tourismthailand.org/" }],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Wat_Arun_2016.jpg/1280px-Wat_Arun_2016.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Templo_Wat_Arun%2C_Bangkok%2C_Tailandia%2C_2013-08-22%2C_DD_30.jpg/1280px-Templo_Wat_Arun%2C_Bangkok%2C_Tailandia%2C_2013-08-22%2C_DD_30.jpg",
       alt: "방콕 왓 아룬 사원의 첨탑과 짜오프라야 강",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Wat_Arun_2016.jpg",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Templo_Wat_Arun%2C_Bangkok%2C_Tailandia%2C_2013-08-22%2C_DD_30.jpg",
     },
   },
   {
@@ -622,9 +624,10 @@ const OVERSEAS_SEED: OverseasSeed[] = [
     ],
     sources: [{ name: "태국관광청(TAT)", url: "https://www.tourismthailand.org/" }],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Wat_Phra_That_Doi_Suthep.jpg/1280px-Wat_Phra_That_Doi_Suthep.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Doi_Suthep_Temple_Chiang_Mai_Thailand_1.jpg/1280px-Doi_Suthep_Temple_Chiang_Mai_Thailand_1.jpg",
       alt: "치앙마이 도이수텝 사원의 황금 탑",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Wat_Phra_That_Doi_Suthep.jpg",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Doi_Suthep_Temple_Chiang_Mai_Thailand_1.jpg",
     },
   },
   {
@@ -665,9 +668,10 @@ const OVERSEAS_SEED: OverseasSeed[] = [
     ],
     sources: [{ name: "베트남 국가관광청", url: "https://vietnam.travel/" }],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Golden_Bridge_Ba_Na_Hills.jpg/1280px-Golden_Bridge_Ba_Na_Hills.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Golden_Bridge_Ba_Na_Hills_aerial_sunset_Da_Nang_Vietnam.jpg/1280px-Golden_Bridge_Ba_Na_Hills_aerial_sunset_Da_Nang_Vietnam.jpg",
       alt: "다낭 바나힐의 골든브릿지와 거대한 손 조형물",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Golden_Bridge_Ba_Na_Hills.jpg",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Golden_Bridge_Ba_Na_Hills_aerial_sunset_Da_Nang_Vietnam.jpg",
     },
   },
   {
@@ -713,10 +717,10 @@ const OVERSEAS_SEED: OverseasSeed[] = [
     ],
     sources: [{ name: "베트남 국가관광청", url: "https://vietnam.travel/" }],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Notre-Dame_Cathedral_Basilica_of_Saigon.jpg/1280px-Notre-Dame_Cathedral_Basilica_of_Saigon.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Saigon_Notre-Dame_Basilica_20190921-2.jpg/1280px-Saigon_Notre-Dame_Basilica_20190921-2.jpg",
       alt: "호치민 노트르담 대성당의 붉은 벽돌 외관",
       sourceUrl:
-        "https://commons.wikimedia.org/wiki/File:Notre-Dame_Cathedral_Basilica_of_Saigon.jpg",
+        "https://commons.wikimedia.org/wiki/File:Saigon_Notre-Dame_Basilica_20190921-2.jpg",
     },
   },
   {
@@ -757,9 +761,9 @@ const OVERSEAS_SEED: OverseasSeed[] = [
     ],
     sources: [{ name: "대만관광청(Taiwan Tourism)", url: "https://www.taiwan.net.tw/" }],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Taipei101_2013.jpg/1280px-Taipei101_2013.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Taipei_101_2009_amk.jpg/1280px-Taipei_101_2009_amk.jpg",
       alt: "타이베이101 빌딩의 야경 전경",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Taipei101_2013.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Taipei_101_2009_amk.jpg",
     },
   },
   {
@@ -800,9 +804,9 @@ const OVERSEAS_SEED: OverseasSeed[] = [
     ],
     sources: [{ name: "대만관광청(Taiwan Tourism)", url: "https://www.taiwan.net.tw/" }],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Lotus_Pond_Dragon_and_Tiger_Pagodas.jpg/1280px-Lotus_Pond_Dragon_and_Tiger_Pagodas.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Lotus_Pond%2C_Kaohsiung.jpg/1280px-Lotus_Pond%2C_Kaohsiung.jpg",
       alt: "가오슝 롄츠탄의 용호탑 쌍둥이 탑",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Lotus_Pond_Dragon_and_Tiger_Pagodas.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Lotus_Pond%2C_Kaohsiung.jpg",
     },
   },
   {
@@ -848,9 +852,10 @@ const OVERSEAS_SEED: OverseasSeed[] = [
     ],
     sources: [{ name: "싱가포르관광청(STB)", url: "https://www.visitsingapore.com/ko_kr/" }],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Marina_Bay_Sands_at_Dusk.jpg/1280px-Marina_Bay_Sands_at_Dusk.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/ArtScience_Museum%2C_Marina_Bay_Sands%2C_Singapore.jpg/1280px-ArtScience_Museum%2C_Marina_Bay_Sands%2C_Singapore.jpg",
       alt: "싱가포르 마리나베이샌즈와 스카이라인 야경",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Marina_Bay_Sands_at_Dusk.jpg",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:ArtScience_Museum%2C_Marina_Bay_Sands%2C_Singapore.jpg",
     },
   },
   {
@@ -897,9 +902,10 @@ const OVERSEAS_SEED: OverseasSeed[] = [
     ],
     sources: [{ name: "센토사 개발청", url: "https://www.sentosa.com.sg/" }],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Sentosa_Merlion.jpg/1280px-Sentosa_Merlion.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Sentosa_Island%2C_Singapore%2C_20240206_1155_6401.jpg/1280px-Sentosa_Island%2C_Singapore%2C_20240206_1155_6401.jpg",
       alt: "센토사섬 실로소 비치와 야자수가 늘어선 해변",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Sentosa_Merlion.jpg",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Sentosa_Island%2C_Singapore%2C_20240206_1155_6401.jpg",
     },
   },
   {
@@ -945,7 +951,7 @@ const OVERSEAS_SEED: OverseasSeed[] = [
       },
     ],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons.jpg/1280px-Tour_Eiffel_Wikimedia_Commons.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg/1280px-Tour_Eiffel_Wikimedia_Commons.jpg",
       alt: "파리 에펠탑과 샹드마르스 공원 전경",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Tour_Eiffel_Wikimedia_Commons.jpg",
     },
@@ -995,9 +1001,10 @@ const OVERSEAS_SEED: OverseasSeed[] = [
       { name: "니스관광청(Office de Tourisme de Nice)", url: "https://www.nicetourisme.com/" },
     ],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Promenade_des_Anglais_Nice.jpg/1280px-Promenade_des_Anglais_Nice.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Promenade_des_Anglais_%28Nice%29%2C_plage.jpg/1280px-Promenade_des_Anglais_%28Nice%29%2C_plage.jpg",
       alt: "니스 프롬나드 데 장글레 해안 산책로 전경",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Promenade_des_Anglais_Nice.jpg",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Promenade_des_Anglais_%28Nice%29%2C_plage.jpg",
     },
   },
   {
@@ -1031,7 +1038,7 @@ const OVERSEAS_SEED: OverseasSeed[] = [
     ],
     sources: [{ name: "이탈리아관광청(ENIT)", url: "https://www.italia.it/ko" }],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseum_in_Rome-April_2007-1-_copie_2B.jpg/1280px-Colosseum_in_Rome-April_2007-1-_copie_2B.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Colosseum_in_Rome-April_2007-1-_copie_2B.jpg/1280px-Colosseum_in_Rome-April_2007-1-_copie_2B.jpg",
       alt: "로마 콜로세움 외관 전경",
       sourceUrl:
         "https://commons.wikimedia.org/wiki/File:Colosseum_in_Rome-April_2007-1-_copie_2B.jpg",
@@ -1080,9 +1087,10 @@ const OVERSEAS_SEED: OverseasSeed[] = [
     ],
     sources: [{ name: "이탈리아관광청(ENIT)", url: "https://www.italia.it/ko" }],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Firenze_Duomo_from_Michelangelo_Hill.jpg/1280px-Firenze_Duomo_from_Michelangelo_Hill.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Florence_Duomo_from_Michelangelo_hill.jpg/1280px-Florence_Duomo_from_Michelangelo_hill.jpg",
       alt: "피렌체 두오모 성당과 시가지 전경",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Firenze_Duomo_from_Michelangelo_Hill.jpg",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Florence_Duomo_from_Michelangelo_hill.jpg",
     },
   },
   {
@@ -1128,9 +1136,9 @@ const OVERSEAS_SEED: OverseasSeed[] = [
     ],
     sources: [{ name: "스페인관광청(Turespaña)", url: "https://www.spain.info/ko/" }],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Sagrada_Familia_08.jpg/1280px-Sagrada_Familia_08.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Sagrada_Familia_March_2015-19bw.jpg/1280px-Sagrada_Familia_March_2015-19bw.jpg",
       alt: "바르셀로나 사그라다 파밀리아 성당 외관",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Sagrada_Familia_08.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Sagrada_Familia_March_2015-19bw.jpg",
     },
   },
   {
@@ -1171,9 +1179,9 @@ const OVERSEAS_SEED: OverseasSeed[] = [
     ],
     sources: [{ name: "스페인관광청(Turespaña)", url: "https://www.spain.info/ko/" }],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Royal_Palace_of_Madrid.jpg/1280px-Royal_Palace_of_Madrid.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Royal_Palace_of_Madrid_01.jpg/1280px-Royal_Palace_of_Madrid_01.jpg",
       alt: "마드리드 왕궁 전경",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Royal_Palace_of_Madrid.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Royal_Palace_of_Madrid_01.jpg",
     },
   },
   {
@@ -1214,10 +1222,10 @@ const OVERSEAS_SEED: OverseasSeed[] = [
     ],
     sources: [{ name: "영국관광청(VisitBritain)", url: "https://www.visitbritain.com/kr/ko" }],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall.jpg/1280px-Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Big_Ben_Elizabeth_Tower_London_2023_01.jpg/1280px-Big_Ben_Elizabeth_Tower_London_2023_01.jpg",
       alt: "런던 국회의사당과 빅벤 전경",
       sourceUrl:
-        "https://commons.wikimedia.org/wiki/File:Palace_of_Westminster_from_the_dome_on_Methodist_Central_Hall.jpg",
+        "https://commons.wikimedia.org/wiki/File:Big_Ben_Elizabeth_Tower_London_2023_01.jpg",
     },
   },
   {
@@ -1258,9 +1266,10 @@ const OVERSEAS_SEED: OverseasSeed[] = [
     ],
     sources: [{ name: "영국관광청(VisitBritain)", url: "https://www.visitbritain.com/kr/ko" }],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Edinburgh_Castle_from_the_west.jpg/1280px-Edinburgh_Castle_from_the_west.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Edinburgh_Castle_from_Esplanade_20211019.jpg/1280px-Edinburgh_Castle_from_Esplanade_20211019.jpg",
       alt: "에든버러성과 언덕 아래 시가지 전경",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Edinburgh_Castle_from_the_west.jpg",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Edinburgh_Castle_from_Esplanade_20211019.jpg",
     },
   },
   {
@@ -1306,9 +1315,10 @@ const OVERSEAS_SEED: OverseasSeed[] = [
     ],
     sources: [{ name: "미국 뉴욕관광청(NYC Tourism)", url: "https://www.nycgo.com/" }],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/NYC_Montage_2014.jpg/1280px-NYC_Montage_2014.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Lower_Manhattan_from_Jersey_City_November_2014_panorama_2.jpg/1280px-Lower_Manhattan_from_Jersey_City_November_2014_panorama_2.jpg",
       alt: "뉴욕 맨해튼 스카이라인 전경",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:NYC_Montage_2014.jpg",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Lower_Manhattan_from_Jersey_City_November_2014_panorama_2.jpg",
     },
   },
   {
@@ -1356,9 +1366,9 @@ const OVERSEAS_SEED: OverseasSeed[] = [
       { name: "로스앤젤레스관광청(LA Tourism)", url: "https://www.discoverlosangeles.com/" },
     ],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Hollywood_Sign_%28Zuschnitt%29.jpg/1280px-Hollywood_Sign_%28Zuschnitt%29.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Hollywood_Sign.jpg/1280px-Hollywood_Sign.jpg",
       alt: "로스앤젤레스 할리우드 사인 전경",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Hollywood_Sign_%28Zuschnitt%29.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Hollywood_Sign.jpg",
     },
   },
   {
@@ -1399,9 +1409,9 @@ const OVERSEAS_SEED: OverseasSeed[] = [
     ],
     sources: [{ name: "호주관광청(Tourism Australia)", url: "https://www.australia.com/ko-kr" }],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Sydney_Opera_House_Sails_Edit_02.jpg/1280px-Sydney_Opera_House_Sails_Edit_02.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Sydney_Opera_House_-_Dec_2008.jpg/1280px-Sydney_Opera_House_-_Dec_2008.jpg",
       alt: "시드니 오페라하우스와 하버 전경",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_Sails_Edit_02.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_-_Dec_2008.jpg",
     },
   },
   {
@@ -1447,9 +1457,9 @@ const OVERSEAS_SEED: OverseasSeed[] = [
     ],
     sources: [{ name: "호주관광청(Tourism Australia)", url: "https://www.australia.com/ko-kr" }],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Hosier_Lane_Graffiti.jpg/1280px-Hosier_Lane_Graffiti.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Street_Art_in_Hosier_Lane_01.jpg/1280px-Street_Art_in_Hosier_Lane_01.jpg",
       alt: "멜버른 호시어레인의 스트리트 아트 골목",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Hosier_Lane_Graffiti.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Street_Art_in_Hosier_Lane_01.jpg",
     },
   },
   {
@@ -1492,9 +1502,9 @@ const OVERSEAS_SEED: OverseasSeed[] = [
       { name: "뉴질랜드관광청(Tourism New Zealand)", url: "https://www.newzealand.com/kr/" },
     ],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Auckland_Sky_Tower_and_Skyline.jpg/1280px-Auckland_Sky_Tower_and_Skyline.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Sky_Tower_Auckland_01.jpg/1280px-Sky_Tower_Auckland_01.jpg",
       alt: "오클랜드 스카이타워와 도심 스카이라인",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Auckland_Sky_Tower_and_Skyline.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Sky_Tower_Auckland_01.jpg",
     },
   },
   {
@@ -1542,9 +1552,9 @@ const OVERSEAS_SEED: OverseasSeed[] = [
       { name: "뉴질랜드관광청(Tourism New Zealand)", url: "https://www.newzealand.com/kr/" },
     ],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Queenstown_NZ.jpg/1280px-Queenstown_NZ.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Queenstown_NZ_08.jpg/1280px-Queenstown_NZ_08.jpg",
       alt: "퀸스타운 와카티푸호수와 남알프스 산맥 전경",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Queenstown_NZ.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Queenstown_NZ_08.jpg",
     },
   },
   {
@@ -1585,7 +1595,7 @@ const OVERSEAS_SEED: OverseasSeed[] = [
     ],
     sources: [{ name: "터키문화관광부", url: "https://www.goturkiye.com/" }],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Hagia_Sophia_Mars_2013.jpg/1280px-Hagia_Sophia_Mars_2013.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Hagia_Sophia_Mars_2013.jpg/1280px-Hagia_Sophia_Mars_2013.jpg",
       alt: "이스탄불 아야소피아 외관 전경",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_Mars_2013.jpg",
     },
@@ -1633,9 +1643,9 @@ const OVERSEAS_SEED: OverseasSeed[] = [
     ],
     sources: [{ name: "터키문화관광부", url: "https://www.goturkiye.com/" }],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Cappadocia_Balloons.jpg/1280px-Cappadocia_Balloons.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Hot_air_balloon_in_Cappadocia_01.jpg/1280px-Hot_air_balloon_in_Cappadocia_01.jpg",
       alt: "카파도키아 기암괴석 위로 떠오른 열기구들",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Cappadocia_Balloons.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Hot_air_balloon_in_Cappadocia_01.jpg",
     },
   },
   {
@@ -1681,9 +1691,10 @@ const OVERSEAS_SEED: OverseasSeed[] = [
     ],
     sources: [{ name: "그리스관광청(GNTO)", url: "https://www.visitgreece.gr/" }],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/The_Parthenon_in_Athens.jpg/1280px-The_Parthenon_in_Athens.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg/1280px-Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg",
       alt: "아테네 아크로폴리스 파르테논 신전 전경",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:The_Parthenon_in_Athens.jpg",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg",
     },
   },
   {
@@ -1724,9 +1735,9 @@ const OVERSEAS_SEED: OverseasSeed[] = [
     ],
     sources: [{ name: "그리스관광청(GNTO)", url: "https://www.visitgreece.gr/" }],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Santorini_Oia_Sunset.jpg/1280px-Santorini_Oia_Sunset.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Oia_Santorini_sunset.jpg/1280px-Oia_Santorini_sunset.jpg",
       alt: "산토리니 이아마을의 하얀 건물과 일몰 전경",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Santorini_Oia_Sunset.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Oia_Santorini_sunset.jpg",
     },
   },
   {
@@ -1774,9 +1785,9 @@ const OVERSEAS_SEED: OverseasSeed[] = [
       { name: "스위스관광청(Switzerland Tourism)", url: "https://www.myswitzerland.com/ko/" },
     ],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Zurich_Grossmunster.jpg/1280px-Zurich_Grossmunster.jpg",
-      alt: "취리히 그로스뮌스터 대성당과 호수 전경",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Zurich_Grossmunster.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Zurich_Cityscape_%2823605378844%29.jpg/1280px-Zurich_Cityscape_%2823605378844%29.jpg",
+      alt: "취리히 도심과 리마트강 전경",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Zurich_Cityscape_%2823605378844%29.jpg",
     },
   },
   {
@@ -1824,9 +1835,10 @@ const OVERSEAS_SEED: OverseasSeed[] = [
       { name: "스위스관광청(Switzerland Tourism)", url: "https://www.myswitzerland.com/ko/" },
     ],
     image: {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Jungfraujoch_View.jpg/1280px-Jungfraujoch_View.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Jungfraujoch%2C_Swiss_Alps%28_Ank_Kumar_%2C_Infosys_Limited_%29_11.jpg/1280px-Jungfraujoch%2C_Swiss_Alps%28_Ank_Kumar_%2C_Infosys_Limited_%29_11.jpg",
       alt: "융프라우요흐 전망대에서 바라본 알프스 만년설",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Jungfraujoch_View.jpg",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Jungfraujoch%2C_Swiss_Alps%28_Ank_Kumar_%2C_Infosys_Limited_%29_11.jpg",
     },
   },
 ];

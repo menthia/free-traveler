@@ -43,7 +43,16 @@ Playwright Chromium 기반으로 'Playwright 공개 화면 Smoke(비로그인)'�
 
 ## Expected Files
 
-- tests/e2e/public-smoke.spec.ts (신규)
+- tests/e2e/public-smoke.spec.ts (신규 — 이미 존재하는 경우 이 Task가 요구하는 흐름/axe-core
+  검사를 추가하는 수정)
+- package.json, package-lock.json (수정 — AC2의 axe-core 자동 접근성 검사를 실행하려면
+  Playwright용 axe 통합 패키지 `@axe-core/playwright`가 필요한데 devDependencies에 없었다.
+  devDependency로 추가한다. Prisma/AWS 등 금지된 인프라 추가가 아니라 테스트 전용
+  패키지다)
+- src/lib/toast-context.tsx (수정 — axe-core 실행 중 발견: Toast 목록 컨테이너
+  `<div aria-label="알림 목록">`이 유효한 role 없이 aria-label만 가진 채 렌더링되어
+  `aria-prohibited-attr` 위반(serious)이 발생했다. `role="region"`을 추가해 aria-label이
+  허용되는 요소로 만든다)
 
 **이 Task는 위 목록 밖의 어떤 파일도 생성·수정하지 않는다.**
 

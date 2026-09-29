@@ -40,6 +40,10 @@
 ## Expected Files
 
 - src/lib/db/mate-state.test.ts (신규)
+- vitest.config.ts (수정 — 테스트 작성 중 발견: `src/lib/db/mates.ts`/`applications.ts`가
+  모두 `@/lib/supabase/server`처럼 `@/` 경로 별칭으로 import하는데, `vitest.config.ts`에는
+  이 별칭이 설정되어 있지 않아 `@/`로 시작하는 어떤 모듈을 import해도 테스트 자체가 실행되지
+  못했다. `tsconfig.json`과 동일하게 `@` → `src`로 매핑하는 `resolve.alias`를 추가한다)
 
 **이 Task는 위 목록 밖의 어떤 파일도 생성·수정하지 않는다.**
 

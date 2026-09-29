@@ -64,6 +64,33 @@ SCR-003(`/travel-tools`, 통합 여행 준비) 화면을 실제 Next.js Route Pa
 ## Expected Files
 
 - src/app/travel-tools/page.tsx (신규)
+- src/components/travel-tools/SummaryActionCard.tsx (수정 — REQ-FUNC-054 "항공 외부 이동
+  요약에서 안전정보 고지 노출" 요구는 COMP-SCR003-FLIGHT-FORM 완료 시점에는 반영되지
+  않았다. 항공 탭에서만 표시하는 선택적 안전정보 고지 문구 prop을 추가한다. 숙소 탭
+  동작은 바꾸지 않는다)
+- src/components/travel-tools/FlightConditionForm.tsx (수정 — 위 SummaryActionCard의
+  새 prop을 항공 탭에서 켜도록 하고, 아래 이유로 제출 버튼을 제거해 유효 입력 시 자동으로
+  요약을 표시하도록 변경)
+- src/components/travel-tools/HotelConditionForm.tsx (수정 — `tests/e2e/public-smoke.spec.ts`
+  의 기존 E2E-003/E2E-004(이 저장소에 이미 커밋되어 있던 테스트, 이번 Task 이전에 작성됨)가
+  별도 제출 버튼 클릭 없이 4개 필드 입력만으로 요약+외부 이동 링크가 나타나는 것을 전제하고
+  있었다. `SummaryActionCard`의 외부 이동 CTA도 `window.open` 버튼에서 실제 `<a href>`
+  태그로 바꿔 href에 입력값이 담기지 않음을 테스트가 직접 확인할 수 있게 한다)
+- src/components/travel-tools/TravelToolsTabsSection.tsx (신규 — Page Owner는
+  `generateMetadata`를 export해야 하므로 Server Component여야 하지만, 탭 전환은 Client
+  state가 필요하다. Next.js의 Server/Client 경계 제약상 이 상태를 들고 있을 정확히 하나의
+  얇은 Client wrapper가 필요하며, COMP-SCR001-THEME-CHIPS의 `DestinationExplorerSection`과
+  동일한 선례 패턴이다 — 새 UI를 설계하지 않고 이미 만들어진 TabBar/Form/Tip/Gate
+  Component만 조립하며, 탭 전환 시 다른 탭 입력값이 사라지지 않도록 3개 탭 콘텐츠를 모두
+  마운트한 채 `hidden`으로만 전환한다)
+- src/middleware.ts (수정 — 프로덕션 빌드로 이 Task를 검증하던 중 발견: CSP의
+  `'strict-dynamic'`가 브라우저에서 `'self'` 호스트 허용을 무효화해 Turbopack이 동적으로
+  삽입하는 코드분할 청크 스크립트 로딩 자체를 차단하고 있었다(사이트 전체 하이드레이션이
+  깨지는 심각한 회귀). Next의 인라인 스트리밍 스크립트는 nonce로 이미 허용되므로
+  `'strict-dynamic'`을 제거하고 `'self' 'nonce-X'`만 사용하도록 고친다. 같은 검증 중
+  `connect-src`가 없어 `default-src 'self'`로 대체되면서 Client Component의 Supabase
+  fetch(예: `outbound_link_setting` 조회)가 전부 차단되는 것도 함께 발견해 `connect-src
+  'self' <NEXT_PUBLIC_SUPABASE_URL>`을 추가한다)
 
 **이 Task는 위 목록 밖의 어떤 파일도 생성·수정하지 않는다.**
 

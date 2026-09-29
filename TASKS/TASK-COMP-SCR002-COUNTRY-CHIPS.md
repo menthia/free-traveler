@@ -38,8 +38,10 @@ SCR-002(`/about`, 대표 소개) 내부에서 재사용되는 UI 조각 '방문 
 ## Expected Files
 
 - src/components/about/RegionChipGroup.tsx (신규)
+- src/components/home/DestinationCardGrid.tsx (수정 — `?country=` 쿼리 파라미터로 전달된 국가의 첫 여행지 Drawer를 마운트 시 자동으로 연다)
+- src/app/page.tsx (수정 — `useSearchParams`를 사용하게 된 `DestinationExplorerSection`을 `<Suspense>`로 감싼다. Next.js가 이 경계 없이는 빌드에서 `missing-suspense-with-csr-bailout` 오류를 낸다)
 
-**이 Task는 위 목록 밖의 어떤 파일도 생성·수정하지 않는다.**
+**이 Task는 위 목록 밖의 어떤 파일도 생성·수정하지 않는다.** ("Chip 클릭 시 SCR-001로 이동해 해당 국가 Drawer가 열린다"는 요건은 SCR-001의 `DestinationCardGrid`가 URL 쿼리 파라미터를 읽어야만 만족되는데, 그 Component를 처음 만든 `COMP-SCR001-DESTINATION-DIRECTORY`에는 이 요건이 없었다 — 실제로 그 기능이 필요해지는 첫 지점인 여기서 추가한다.)
 
 ## Functional AC
 

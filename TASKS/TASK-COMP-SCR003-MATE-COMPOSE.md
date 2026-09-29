@@ -43,6 +43,9 @@ SCR-003(`/travel-tools`, 통합 여행 준비) 내부에서 재사용되는 UI �
 ## Expected Files
 
 - src/components/travel-tools/MateComposeForm.tsx (신규)
+- src/app/layout.tsx (수정 — `ToastProvider`로 `children`을 감싼다. COMP-GLOBAL-TOAST가
+  `src/lib/toast-context.tsx`의 Provider/`useToast`를 만들었지만 루트 Layout에 아직 연결되지
+  않았고, 이 Task가 `useToast`를 실제로 호출하는 첫 Task이므로 여기서 연결한다)
 
 **이 Task는 위 목록 밖의 어떤 파일도 생성·수정하지 않는다.**
 

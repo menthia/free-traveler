@@ -41,6 +41,12 @@
 ## Expected Files
 
 - —(코드 산출물 없음, 체크리스트: TASKS/checklists/responsive.md 신규)
+- src/components/mates/MatesPageSections.tsx (수정 — 자동 사전 스캔 중 발견: `/mates`
+  1128px 폭에서 목록(40%)+상세(60%) 2열 grid가 `gap-8`만큼 컨테이너 폭을 초과해 약 12px
+  가로 스크롤이 발생했다(`grid-template-columns: 40% 60%`는 퍼센트 트랙이 gap을 반영하지
+  않아 총합이 100%+gap이 됨). `40% 60%`를 `2fr 3fr`로 바꿔 gap이 트랙 폭에 반영되게
+  고친다 — 실제 가로 스크롤 버그를 발견하고도 고치지 않은 채 이 체크리스트를 통과 처리하는
+  것은 이 Task의 목적(REQ-FUNC-065)에 반하므로 최소 수정으로 반영한다)
 
 **이 Task는 위 목록 밖의 어떤 파일도 생성·수정하지 않는다.**
 

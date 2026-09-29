@@ -55,6 +55,18 @@ SCR-004(`/mates`, 동행 조회) 화면을 실제 Next.js Route Page로 조립�
 ## Expected Files
 
 - src/app/mates/page.tsx (신규)
+- src/components/mates/MateDetailPanel.tsx (수정 — `children`을 정적 ReactNode에서
+  `(ctx: { postId, ownerId }) => ReactNode` 렌더 prop으로 바꾼다. Page Owner가
+  `ApplicationForm`/`ReportBlockActions`를 상세 안에 조립하려면 상세가 이미 조회해 둔
+  글 작성자 `owner_id`(REPORT-BLOCK-ACTIONS의 `blockedUserId`에 필요)를 다시 조회하지
+  않고 그대로 전달받아야 하기 때문이다)
+- src/components/mates/MateDetailDrawer.tsx (수정 — 위와 동일한 이유로 `children`을
+  같은 렌더 prop 형태로 그대로 전달하도록 바꾼다)
+- src/components/mates/MatesPageSections.tsx (신규 — Page Owner는 `generateMetadata`를
+  export해야 해서 Server Component여야 하지만, 선택된 동행글(`selectedPostId`) state는
+  Client에서만 들고 있을 수 있다. PAGE-SCR003의 `TravelToolsTabsSection`과 동일한 선례
+  패턴 — 새 UI를 설계하지 않고 이미 만들어진 POST-LIST/DETAIL-PANEL/DETAIL-DRAWER/
+  APPLICATION-FORM/REPORT-BLOCK-ACTIONS만 조립하는 얇은 Client wrapper)
 
 **이 Task는 위 목록 밖의 어떤 파일도 생성·수정하지 않는다.**
 

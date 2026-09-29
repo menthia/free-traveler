@@ -39,6 +39,9 @@
 ## Expected Files
 
 - tests/integration/rls-basic.test.ts (신규)
+- vitest.config.ts (수정 — `include`가 `src/**`와 `tests/unit/**`만 포함하고
+  `tests/integration/**`는 빠져 있어, 이 경로에 테스트를 새로 만들어도 `vitest run`이
+  전혀 수집하지 못했다. `tests/integration/**/*.{test,spec}.{ts,tsx}`를 추가한다)
 
 **이 Task는 위 목록 밖의 어떤 파일도 생성·수정하지 않는다.**
 

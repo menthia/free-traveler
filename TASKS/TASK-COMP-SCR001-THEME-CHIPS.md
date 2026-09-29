@@ -37,8 +37,10 @@ SCR-001(`/`, 여행지 탐색) 내부에서 재사용되는 UI 조각 '여행 �
 ## Expected Files
 
 - src/components/home/ThemeChipFilter.tsx (신규)
+- src/components/home/DestinationCardGrid.tsx (수정 — 테마 필터를 내부 `<select>`에서 외부 제어형 prop(`selectedTheme`/`onThemeChange`)으로 전환)
+- src/components/home/DestinationExplorerSection.tsx (신규 — `DestinationCardGrid`+`ThemeChipFilter`를 함께 묶어 `theme` state를 내부에서 공유하는 Client Component 래퍼)
 
-**이 Task는 위 목록 밖의 어떤 파일도 생성·수정하지 않는다.**
+**이 Task는 위 목록 밖의 어떤 파일도 생성·수정하지 않는다.** ("Chip 선택 시 여행지 Card Grid가 해당 테마로 필터링된다"는 요건상 두 Component가 테마 상태를 공유해야 하는데, `COMP-SCR001-DESTINATION-DIRECTORY`는 테마를 내부 `<select>`로만 관리하도록 먼저 구현되어 있었다 — 이 Chip Task가 실제로 그 상태를 외부에서 제어해야 하는 첫 지점이라 여기서 함께 리팩터링한다. 또한 `PAGE-SCR001`은 `generateMetadata`를 export하는 Server Component 파일이어야 하고(CLAUDE.md 규칙 9로 새 Component 생성도 금지) 두 Client Component 사이에 state를 직접 공유할 수 없으므로, 이 Task가 그 공유 state를 갖는 작은 래퍼 하나를 함께 제공한다 — Page Owner는 이 래퍼 하나만 import해 Section ②③(Grid)·④(Chip) 자리에 배치한다.)
 
 ## Functional AC
 

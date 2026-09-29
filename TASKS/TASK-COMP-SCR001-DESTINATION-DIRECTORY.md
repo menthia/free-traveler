@@ -45,10 +45,11 @@ SCR-001(`/`, 여행지 탐색) 내부에서 재사용되는 UI 조각 '국내/�
 
 ## Expected Files
 
+- next.config.ts (수정 — `images.remotePatterns`에 `upload.wikimedia.org` 추가)
 - src/components/home/DestinationCardGrid.tsx (신규)
 - src/components/home/DestinationDrawer.tsx (신규)
 
-**이 Task는 위 목록 밖의 어떤 파일도 생성·수정하지 않는다.**
+**이 Task는 위 목록 밖의 어떤 파일도 생성·수정하지 않는다.** (`next/image`로 여행지 이미지를 반응형·lazy load 렌더링하려면(REQ-NF-006) 외부 이미지 도메인을 `next.config.ts`에 허용해야 하는데, 이를 설정하는 Task가 계획에 없었다 — 이미지를 실제로 렌더링하는 첫 Task인 여기서 함께 설정한다.)
 
 ## Functional AC
 

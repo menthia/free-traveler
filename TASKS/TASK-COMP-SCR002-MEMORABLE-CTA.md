@@ -38,8 +38,9 @@ SCR-002(`/about`, 대표 소개) 내부에서 재사용되는 UI 조각 '기억�
 ## Expected Files
 
 - src/components/about/MemorableDestinationCta.tsx (신규)
+- src/components/home/DestinationCardGrid.tsx (수정 — `?destination=<id>` 쿼리 파라미터로 특정 여행지 Drawer를 정확히 지정해 여는 기능 추가. 기존 `?country=` 지원은 그대로 유지)
 
-**이 Task는 위 목록 밖의 어떤 파일도 생성·수정하지 않는다.**
+**이 Task는 위 목록 밖의 어떤 파일도 생성·수정하지 않는다.** ("카드 클릭 시 SCR-001로 이동해 해당 여행지 Drawer가 열린다"는 국가 단위가 아니라 특정 여행지(예: 그리스 여러 곳 중 산토리니만) 단위 지정이 필요해 `COMP-SCR002-COUNTRY-CHIPS`가 추가한 `?country=` 파라미터만으로는 부족하다 — 더 정밀한 `?destination=` 파라미터를 여기서 추가한다.)
 
 ## Functional AC
 

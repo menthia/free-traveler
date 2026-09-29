@@ -39,6 +39,10 @@ SCR-004(`/mates`, 동행 조회) 내부에서 재사용되는 UI 조각 '동행�
 
 - src/components/mates/MateDetailPanel.tsx (신규)
 - src/components/mates/MateDetailDrawer.tsx (Mobile, 신규)
+- src/components/mates/MatePostList.tsx (수정 — 이 Task가 상세를 열려면 카드 클릭으로 선택된
+  글을 알아야 하는데, POST-LIST 완료 시점에는 카드가 클릭 불가능한 순수 표시용이었다.
+  `onSelectPost`/`selectedPostId` prop을 추가해 카드를 클릭 가능하게 하고 선택 상태를
+  시각적으로 표시한다 — 새 UI 조각을 만들지 않고 기존 카드에 최소한의 상호작용만 추가)
 
 **이 Task는 위 목록 밖의 어떤 파일도 생성·수정하지 않는다.**
 

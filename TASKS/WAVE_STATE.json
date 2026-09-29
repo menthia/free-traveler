@@ -1,7 +1,7 @@
 {
   "schema_version": "traveler-wave-state-v1",
   "generated_at": "2026-09-26T03:49:21+00:00",
-  "current_wave": "W03",
+  "current_wave": "W13",
   "waves": [
     {
       "wave_id": "W01",
@@ -59,17 +59,17 @@
         "API-AUTH-CALLBACK",
         "API-MATE-AUTOCLOSE"
       ],
-      "status": "blocked",
+      "status": "completed",
       "checkpoint_required": false,
       "checkpoint_result": "not_required",
       "tasks": {
-        "INFRA-SUPABASE-PROJECT": "blocked",
-        "DB-SCHEMA-BASE": "pending",
-        "DB-RLS-BASE": "pending",
-        "DB-ACCESS": "pending",
-        "DB-SEED-BASE": "pending",
-        "API-AUTH-CALLBACK": "pending",
-        "API-MATE-AUTOCLOSE": "pending"
+        "INFRA-SUPABASE-PROJECT": "done",
+        "DB-SCHEMA-BASE": "done",
+        "DB-RLS-BASE": "done",
+        "DB-ACCESS": "done",
+        "DB-SEED-BASE": "done",
+        "API-AUTH-CALLBACK": "done",
+        "API-MATE-AUTOCLOSE": "done"
       }
     },
     {
@@ -84,9 +84,18 @@
         "API-ADMIN-OUTBOUND-SETTINGS",
         "API-SECURITY-BASELINE"
       ],
-      "status": "pending",
+      "status": "completed",
       "checkpoint_required": false,
-      "checkpoint_result": "not_required"
+      "checkpoint_result": "not_required",
+      "tasks": {
+        "API-MATES-CRUD": "done",
+        "API-APPLICATIONS": "done",
+        "API-BLOCKS": "done",
+        "API-REPORTS": "done",
+        "API-ADMIN-REPORTS": "done",
+        "API-ADMIN-OUTBOUND-SETTINGS": "done",
+        "API-SECURITY-BASELINE": "done"
+      }
     },
     {
       "wave_id": "W05",
@@ -100,9 +109,18 @@
         "COMP-SCR001-MATE-PREVIEW",
         "PAGE-SCR001"
       ],
-      "status": "pending",
+      "status": "completed",
       "checkpoint_required": true,
-      "checkpoint_result": "pending"
+      "checkpoint_result": "confirmed",
+      "tasks": {
+        "COMP-SCR001-HERO-SEARCH": "done",
+        "COMP-SCR001-DESTINATION-DIRECTORY": "done",
+        "COMP-SCR001-THEME-CHIPS": "done",
+        "COMP-SCR001-SAFETY": "done",
+        "COMP-SCR001-CURATOR-SUMMARY": "done",
+        "COMP-SCR001-MATE-PREVIEW": "done",
+        "PAGE-SCR001": "done"
+      }
     },
     {
       "wave_id": "W06",
@@ -116,9 +134,18 @@
         "COMP-SCR002-MEMORABLE-CTA",
         "PAGE-SCR002"
       ],
-      "status": "pending",
+      "status": "completed",
       "checkpoint_required": true,
-      "checkpoint_result": "pending"
+      "checkpoint_result": "confirmed",
+      "tasks": {
+        "COMP-SCR002-PROFILE-HERO": "done",
+        "COMP-SCR002-STATS-AND-INTRO": "done",
+        "COMP-SCR002-TIMELINE": "done",
+        "COMP-SCR002-COUNTRY-CHIPS": "done",
+        "COMP-SCR002-GALLERY": "done",
+        "COMP-SCR002-MEMORABLE-CTA": "done",
+        "PAGE-SCR002": "done"
+      }
     },
     {
       "wave_id": "W07",
@@ -132,9 +159,18 @@
         "COMP-SCR003-MATE-COMPOSE",
         "PAGE-SCR003"
       ],
-      "status": "pending",
+      "status": "completed",
       "checkpoint_required": true,
-      "checkpoint_result": "pending"
+      "checkpoint_result": "confirmed",
+      "tasks": {
+        "COMP-SCR003-INTRO-TABS": "done",
+        "COMP-SCR003-MATE-LOGIN-GATE": "done",
+        "COMP-SCR003-FLIGHT-FORM": "done",
+        "COMP-SCR003-HOTEL-FORM": "done",
+        "COMP-SCR003-TIPS": "done",
+        "COMP-SCR003-MATE-COMPOSE": "done",
+        "PAGE-SCR003": "done"
+      }
     },
     {
       "wave_id": "W08",
@@ -145,9 +181,15 @@
         "COMP-SCR004-FILTER-BAR",
         "COMP-SCR004-POST-LIST"
       ],
-      "status": "pending",
+      "status": "completed",
       "checkpoint_required": false,
-      "checkpoint_result": "not_required"
+      "checkpoint_result": "not_required",
+      "tasks": {
+        "COMP-SCR004-INTRO": "done",
+        "COMP-SCR004-STEP-GUIDE-AND-SAFETY": "done",
+        "COMP-SCR004-FILTER-BAR": "done",
+        "COMP-SCR004-POST-LIST": "done"
+      }
     },
     {
       "wave_id": "W09",
@@ -158,9 +200,15 @@
         "COMP-SCR004-REPORT-BLOCK-ACTIONS",
         "PAGE-SCR004"
       ],
-      "status": "pending",
+      "status": "completed",
       "checkpoint_required": true,
-      "checkpoint_result": "pending"
+      "checkpoint_result": "confirmed",
+      "tasks": {
+        "COMP-SCR004-DETAIL-PANEL": "done",
+        "COMP-SCR004-APPLICATION-FORM": "done",
+        "COMP-SCR004-REPORT-BLOCK-ACTIONS": "done",
+        "PAGE-SCR004": "done"
+      }
     },
     {
       "wave_id": "W10",
@@ -173,9 +221,17 @@
         "COMP-SCR005-ADMIN-URL-SETTINGS",
         "PAGE-SCR005"
       ],
-      "status": "pending",
+      "status": "completed",
       "checkpoint_required": true,
-      "checkpoint_result": "pending"
+      "checkpoint_result": "confirmed",
+      "tasks": {
+        "COMP-SCR005-GUEST-AUTH": "done",
+        "COMP-SCR005-PROFILE-AND-CONSENT": "done",
+        "COMP-SCR005-MY-ACTIVITY": "done",
+        "COMP-SCR005-ADMIN-REPORT-QUEUE": "done",
+        "COMP-SCR005-ADMIN-URL-SETTINGS": "done",
+        "PAGE-SCR005": "done"
+      }
     },
     {
       "wave_id": "W11",
@@ -187,9 +243,16 @@
         "TEST-RLS-BASIC",
         "E2E-PUBLIC-SMOKE"
       ],
-      "status": "pending",
+      "status": "completed",
       "checkpoint_required": false,
-      "checkpoint_result": "not_required"
+      "checkpoint_result": "not_required",
+      "tasks": {
+        "UNIT-TRAVEL-DATES": "done",
+        "UNIT-CONTACT-DETECTION": "done",
+        "UNIT-MATE-STATE": "done",
+        "TEST-RLS-BASIC": "done",
+        "E2E-PUBLIC-SMOKE": "done"
+      }
     },
     {
       "wave_id": "W12",
@@ -201,9 +264,16 @@
         "MANUAL-RESPONSIVE-CHECK",
         "MANUAL-A11Y-CHECK"
       ],
-      "status": "pending",
+      "status": "completed",
       "checkpoint_required": false,
-      "checkpoint_result": "not_required"
+      "checkpoint_result": "not_required",
+      "tasks": {
+        "E2E-TRAVEL-TOOLS": "done",
+        "E2E-MATE-AUTH": "done",
+        "CI-PIPELINE": "done",
+        "MANUAL-RESPONSIVE-CHECK": "done",
+        "MANUAL-A11Y-CHECK": "done"
+      }
     },
     {
       "wave_id": "W13",
@@ -213,9 +283,14 @@
         "RELEASE-CHECK-EXTERNAL-LINKS",
         "RELEASE-CHECK-CONTENT-GATE"
       ],
-      "status": "pending",
+      "status": "completed",
       "checkpoint_required": true,
-      "checkpoint_result": "pending"
+      "checkpoint_result": "confirmed",
+      "tasks": {
+        "INFRA-VERCEL-DEPLOY": "done",
+        "RELEASE-CHECK-EXTERNAL-LINKS": "done",
+        "RELEASE-CHECK-CONTENT-GATE": "done"
+      }
     }
   ]
 }

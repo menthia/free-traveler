@@ -96,9 +96,9 @@ export const REPRESENTATIVE_PROFILE: RepresentativeProfile = {
     },
     {
       year: "2022",
-      title: "중동·튀르키예 탐방",
+      title: "중동·터키 탐방",
       description:
-        "튀르키예 이스탄불과 카파도키아를 방문해 문화적 차이가 큰 지역의 여행 에티켓을 정리했다.",
+        "터키 이스탄불과 카파도키아를 방문해 문화적 차이가 큰 지역의 여행 에티켓을 정리했다.",
     },
     {
       year: "2023",
@@ -137,7 +137,7 @@ export const REPRESENTATIVE_PROFILE: RepresentativeProfile = {
     { region: "유럽", country: "포르투갈" },
     { region: "유럽", country: "그리스" },
     { region: "유럽", country: "체코" },
-    { region: "유럽", country: "튀르키예" },
+    { region: "유럽", country: "터키" },
     { region: "오세아니아", country: "호주" },
     { region: "오세아니아", country: "뉴질랜드" },
     { region: "오세아니아", country: "피지" },
@@ -149,47 +149,49 @@ export const REPRESENTATIVE_PROFILE: RepresentativeProfile = {
   ],
   gallery: [
     {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Senso-ji_Temple_2016.jpg/800px-Senso-ji_Temple_2016.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Sensoji_temple%2C_Asakusa%2C_Tokyo%2C_Japan.jpg/1280px-Sensoji_temple%2C_Asakusa%2C_Tokyo%2C_Japan.jpg",
       alt: "도쿄 센소지 앞에서 촬영한 여행 기록 사진",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Senso-ji_Temple_2016.jpg",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Sensoji_temple%2C_Asakusa%2C_Tokyo%2C_Japan.jpg",
     },
     {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons.jpg/800px-Tour_Eiffel_Wikimedia_Commons.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg/1280px-Tour_Eiffel_Wikimedia_Commons.jpg",
       alt: "파리 에펠탑 앞 여행 기록 사진",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Tour_Eiffel_Wikimedia_Commons.jpg",
     },
     {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Sydney_Opera_House_Sails_Edit_02.jpg/800px-Sydney_Opera_House_Sails_Edit_02.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Sydney_Opera_House_-_Dec_2008.jpg/1280px-Sydney_Opera_House_-_Dec_2008.jpg",
       alt: "시드니 오페라하우스 앞 여행 기록 사진",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_Sails_Edit_02.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_-_Dec_2008.jpg",
     },
     {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Cappadocia_Balloons.jpg/800px-Cappadocia_Balloons.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Hot_air_balloon_in_Cappadocia_01.jpg/1280px-Hot_air_balloon_in_Cappadocia_01.jpg",
       alt: "카파도키아 열기구 투어 여행 기록 사진",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Cappadocia_Balloons.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Hot_air_balloon_in_Cappadocia_01.jpg",
     },
     {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Santorini_Oia_Sunset.jpg/800px-Santorini_Oia_Sunset.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Oia_Santorini_sunset.jpg/1280px-Oia_Santorini_sunset.jpg",
       alt: "산토리니 이아마을 일몰 여행 기록 사진",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Santorini_Oia_Sunset.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Oia_Santorini_sunset.jpg",
     },
     {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Jungfraujoch_View.jpg/800px-Jungfraujoch_View.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Jungfraujoch%2C_Swiss_Alps%28_Ank_Kumar_%2C_Infosys_Limited_%29_11.jpg/1280px-Jungfraujoch%2C_Swiss_Alps%28_Ank_Kumar_%2C_Infosys_Limited_%29_11.jpg",
       alt: "융프라우요흐 전망대 여행 기록 사진",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Jungfraujoch_View.jpg",
+      sourceUrl:
+        "https://commons.wikimedia.org/wiki/File:Jungfraujoch%2C_Swiss_Alps%28_Ank_Kumar_%2C_Infosys_Limited_%29_11.jpg",
     },
     {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Seongsan_Ilchulbong.jpg/800px-Seongsan_Ilchulbong.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Seongsan_Ilchulbong.jpg/1280px-Seongsan_Ilchulbong.jpg",
       alt: "제주 성산일출봉 여행 기록 사진",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Seongsan_Ilchulbong.jpg",
     },
     {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Hahoe_Folk_Village.jpg/800px-Hahoe_Folk_Village.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Hahoe_Folk_Village_03.jpg/1280px-Hahoe_Folk_Village_03.jpg",
       alt: "안동 하회마을 여행 기록 사진",
-      sourceUrl: "https://commons.wikimedia.org/wiki/File:Hahoe_Folk_Village.jpg",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:Hahoe_Folk_Village_03.jpg",
     },
     {
-      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Hagia_Sophia_Mars_2013.jpg/800px-Hagia_Sophia_Mars_2013.jpg",
+      url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Hagia_Sophia_Mars_2013.jpg/1280px-Hagia_Sophia_Mars_2013.jpg",
       alt: "이스탄불 아야소피아 여행 기록 사진",
       sourceUrl: "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_Mars_2013.jpg",
     },
@@ -201,19 +203,19 @@ export const REPRESENTATIVE_PROFILE: RepresentativeProfile = {
       description:
         "이아마을 칼데라 절벽에서 바라본 일몰은 10년 여행 중 가장 인상적인 순간으로 꼽힌다.",
       image: {
-        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Santorini_Oia_Sunset.jpg/800px-Santorini_Oia_Sunset.jpg",
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Oia_Santorini_sunset.jpg/1280px-Oia_Santorini_sunset.jpg",
         alt: "산토리니 이아마을의 일몰 전경",
-        sourceUrl: "https://commons.wikimedia.org/wiki/File:Santorini_Oia_Sunset.jpg",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Oia_Santorini_sunset.jpg",
       },
     },
     {
       name: "카파도키아",
-      country: "튀르키예",
+      country: "터키",
       description: "새벽 하늘을 수놓은 열기구 무리를 처음 본 순간, 여행의 이유를 다시 확인했다.",
       image: {
-        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Cappadocia_Balloons.jpg/800px-Cappadocia_Balloons.jpg",
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Hot_air_balloon_in_Cappadocia_01.jpg/1280px-Hot_air_balloon_in_Cappadocia_01.jpg",
         alt: "카파도키아 상공의 열기구들",
-        sourceUrl: "https://commons.wikimedia.org/wiki/File:Cappadocia_Balloons.jpg",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Hot_air_balloon_in_Cappadocia_01.jpg",
       },
     },
     {
@@ -221,9 +223,9 @@ export const REPRESENTATIVE_PROFILE: RepresentativeProfile = {
       country: "뉴질랜드",
       description: "와카티푸호수를 마주한 새벽 산책은 여행 중 가장 평온했던 기억으로 남아 있다.",
       image: {
-        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Queenstown_NZ.jpg/800px-Queenstown_NZ.jpg",
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Queenstown_NZ_08.jpg/1280px-Queenstown_NZ_08.jpg",
         alt: "퀸스타운 와카티푸호수 전경",
-        sourceUrl: "https://commons.wikimedia.org/wiki/File:Queenstown_NZ.jpg",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Queenstown_NZ_08.jpg",
       },
     },
     {
@@ -232,7 +234,7 @@ export const REPRESENTATIVE_PROFILE: RepresentativeProfile = {
       description:
         "국내 여행 재발견 시기에 다시 찾은 성산일출봉의 일출은 해외 못지않은 감동을 주었다.",
       image: {
-        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Seongsan_Ilchulbong.jpg/800px-Seongsan_Ilchulbong.jpg",
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Seongsan_Ilchulbong.jpg/1280px-Seongsan_Ilchulbong.jpg",
         alt: "제주 성산일출봉의 일출 전경",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:Seongsan_Ilchulbong.jpg",
       },
@@ -243,8 +245,9 @@ export const REPRESENTATIVE_PROFILE: RepresentativeProfile = {
     { label: "Instagram", url: "https://instagram.com/free_traveler" },
   ],
   heroImage: {
-    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Jungfraujoch_View.jpg/1280px-Jungfraujoch_View.jpg",
+    url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Jungfraujoch%2C_Swiss_Alps%28_Ank_Kumar_%2C_Infosys_Limited_%29_11.jpg/1280px-Jungfraujoch%2C_Swiss_Alps%28_Ank_Kumar_%2C_Infosys_Limited_%29_11.jpg",
     alt: "알프스 산맥을 배경으로 한 free_traveler의 여행 기록 사진",
-    sourceUrl: "https://commons.wikimedia.org/wiki/File:Jungfraujoch_View.jpg",
+    sourceUrl:
+      "https://commons.wikimedia.org/wiki/File:Jungfraujoch%2C_Swiss_Alps%28_Ank_Kumar_%2C_Infosys_Limited_%29_11.jpg",
   },
 };
