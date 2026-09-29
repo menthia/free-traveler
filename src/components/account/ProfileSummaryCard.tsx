@@ -117,6 +117,10 @@ export default function ProfileSummaryCard() {
         })
         .eq("user_id", userId);
       setSaveMessage(error ? "저장에 실패했습니다." : "저장되었습니다.");
+      // GlobalHeader는 마운트 시 1회 + 로그인/로그아웃 이벤트에만 닉네임을 다시 읽으므로,
+      // 저장 직후 헤더 표시가 갱신되지 않는 문제(사용자 리포트)가 있었다. 저장 성공 시
+      // 커스텀 이벤트로 알려 헤더가 다시 읽도록 한다.
+      if (!error) window.dispatchEvent(new Event("ft:nickname-updated"));
     } catch {
       setSaveMessage("저장에 실패했습니다.");
     } finally {

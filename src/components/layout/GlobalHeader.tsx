@@ -51,10 +51,14 @@ function useAccountNickname() {
     } = supabase.auth.onAuthStateChange(() => {
       loadNickname();
     });
+    // ProfileSummaryCard가 닉네임 저장에 성공하면 이 이벤트를 발생시킨다(§ProfileSummaryCard
+    // 참고 — 헤더가 로그인/로그아웃 시점에만 갱신되어 저장 직후 반영되지 않는 문제가 있었다).
+    window.addEventListener("ft:nickname-updated", loadNickname);
 
     return () => {
       cancelled = true;
       subscription.unsubscribe();
+      window.removeEventListener("ft:nickname-updated", loadNickname);
     };
   }, []);
 
