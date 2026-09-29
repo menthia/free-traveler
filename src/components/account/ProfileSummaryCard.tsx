@@ -173,12 +173,9 @@ export default function ProfileSummaryCard() {
             onChange={(e) =>
               setProfile({ ...profile, age_band: (e.target.value || null) as AgeBand | null })
             }
-            required
             className="min-h-[44px] rounded-[10px] border border-[#E4E0DC] px-3 text-[15px] text-[#262425]"
           >
-            <option value="" disabled>
-              선택해 주세요
-            </option>
+            <option value="">선택 안 함</option>
             {AGE_BAND_OPTIONS.map((o) => (
               <option key={o.value} value={o.value}>
                 {o.label}
@@ -253,12 +250,7 @@ export default function ProfileSummaryCard() {
 
       <button
         type="submit"
-        disabled={
-          isSaving ||
-          !profile.nickname.trim() ||
-          !profile.age_band ||
-          profile.travel_styles.length === 0
-        }
+        disabled={isSaving || !profile.nickname.trim()}
         className="flex min-h-[44px] items-center justify-center rounded-[10px] bg-[#FF6A4D] text-[16px] font-semibold text-white hover:bg-[#E14E32] disabled:cursor-not-allowed disabled:bg-[#FFE3D8]"
       >
         {isSaving ? "저장 중..." : "저장하기"}

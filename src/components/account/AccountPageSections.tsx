@@ -61,12 +61,27 @@ export default function AccountPageSections() {
         const desiredNickname =
           (user.user_metadata?.nickname as string | undefined)?.trim() ||
           (user.email ?? "traveler").split("@")[0];
-        const { data: created } = await supabase
+        // 회원가입 시 입력한 닉네임을 그대로 저장한다. 다른 계정과 겹칠 때만(23505
+        // unique_violation) 무작위 접미사를 붙여 재시도한다(GuestAuthForm.ensureUserProfile과
+        // 동일한 이유 — 항상 접미사를 붙이면 입력한 닉네임이 사라진다).
+        const { data: created, error: insertError } = await supabase
           .from("user_profile")
-          .insert({ user_id: user.id, nickname: `${desiredNickname}-${randomNicknameSuffix()}` })
+          .insert({ user_id: user.id, nickname: desiredNickname })
           .select("role")
           .maybeSingle();
-        profile = created;
+        if (insertError?.code === "23505") {
+          const { data: retried } = await supabase
+            .from("user_profile")
+            .insert({
+              user_id: user.id,
+              nickname: `${desiredNickname}-${randomNicknameSuffix()}`,
+            })
+            .select("role")
+            .maybeSingle();
+          profile = retried;
+        } else {
+          profile = created;
+        }
       }
 
       setRole(profile?.role === "moderator" || profile?.role === "admin" ? "admin" : "member");

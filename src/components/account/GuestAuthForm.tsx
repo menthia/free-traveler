@@ -56,10 +56,18 @@ export default function GuestAuthForm({ onAuthenticated }: GuestAuthFormProps) {
     if (existing) return;
 
     const desiredNickname = nickname.trim() || fallbackEmail.split("@")[0];
-    await supabase.from("user_profile").insert({
-      user_id: userId,
-      nickname: `${desiredNickname}-${randomNicknameSuffix()}`,
-    });
+    // 먼저 입력받은 닉네임을 그대로 저장한다. `nickname`은 NOT NULL UNIQUE라 다른 계정과
+    // 겹칠 때만(23505 unique_violation) 무작위 접미사를 붙여 재시도한다 — 항상 접미사를
+    // 붙이면 사용자가 입력한 닉네임이 그대로 사라지는 문제가 있었다(사용자 리포트로 발견).
+    const { error: insertError } = await supabase
+      .from("user_profile")
+      .insert({ user_id: userId, nickname: desiredNickname });
+    if (insertError?.code === "23505") {
+      await supabase.from("user_profile").insert({
+        user_id: userId,
+        nickname: `${desiredNickname}-${randomNicknameSuffix()}`,
+      });
+    }
   }
 
   const handleLogin = async (e: React.FormEvent) => {
