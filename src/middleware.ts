@@ -14,13 +14,17 @@ function buildCspHeader(nonce: string): string {
     // 동적 삽입해 로딩해 strict-dynamic 하에서는 그 청크 자체가 차단되고 사이트 전체
     // 하이드레이션이 깨졌다(실측: PAGE-SCR003 프로덕션 빌드 검증 중 발견). 청크는 동일
     // 출처 <script src>이므로 'self'만으로 이미 허용된다.
-    `script-src 'self' 'nonce-${nonce}'${isDev ? " 'unsafe-eval'" : ""}`,
+    // Google Analytics(GA4, gtag.js)를 RootLayout에서 로드한다(REQ-FUNC-071, 사용자 요청으로
+    // PROJECT_SCOPE.md를 IMPLEMENT로 갱신). gtag.js 자체는 nonce가 붙은 <Script>로 불러오지만,
+    // 그 안에서 googletagmanager.com 호스트의 스크립트를 추가로 로드하므로 script-src에 허용한다.
+    `script-src 'self' 'nonce-${nonce}' https://www.googletagmanager.com${isDev ? " 'unsafe-eval'" : ""}`,
     `style-src 'self' 'unsafe-inline'`,
     `img-src 'self' https://upload.wikimedia.org data:`,
     // Client Component(예: 외부 이동 URL·로그인 상태 조회)가 Supabase에 직접 fetch하므로
     // connect-src를 명시한다 — 없으면 default-src 'self'로 대체되어 Supabase 도메인으로의
     // 요청이 전부 차단된다(실측: PAGE-SCR003 프로덕션 빌드 검증 중 발견).
-    `connect-src 'self'${process.env.NEXT_PUBLIC_SUPABASE_URL ? ` ${process.env.NEXT_PUBLIC_SUPABASE_URL}` : ""}`,
+    // GA4는 수집 데이터를 region1.google-analytics.com으로도 보낼 수 있어 와일드카드로 허용한다.
+    `connect-src 'self' https://*.google-analytics.com https://www.googletagmanager.com${process.env.NEXT_PUBLIC_SUPABASE_URL ? ` ${process.env.NEXT_PUBLIC_SUPABASE_URL}` : ""}`,
     `object-src 'none'`,
     `base-uri 'self'`,
     `frame-ancestors 'none'`,

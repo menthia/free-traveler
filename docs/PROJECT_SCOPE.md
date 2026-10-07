@@ -163,7 +163,7 @@
 | REQ-FUNC-068 | IMPLEMENT(변형) | 즐겨찾기를 `localStorage`에 저장(서버 영속화 없음), 중복 방지 | Playwright: 즐겨찾기 추가/해제/중복 방지 확인 |
 | REQ-FUNC-069 | EXCLUDED | 필수 구현 범위 밖의 부가 UX이며 브라우저 기본 URL 복사로 충분히 대체 가능 | 해당 없음 |
 | REQ-FUNC-070 | IMPLEMENT | Next.js Metadata API로 title/description/canonical/OG 제공 | 자동 메타데이터 검사 스크립트 |
-| REQ-FUNC-071 | EXCLUDED | 별도 분석 이벤트 수집 인프라 구축은 필수 구현 범위·구현 방식에 없음, KPI 계측은 MVP 이후 과제 | 해당 없음 |
+| REQ-FUNC-071 | IMPLEMENT(변형) | 별도 분석 이벤트 수집 인프라 대신 GA4(gtag.js) 페이지뷰 추적만 추가(사용자 요청으로 EXCLUDED→IMPLEMENT 갱신). 커스텀 이벤트·KPI 대시보드는 범위 밖 | 수동: GA4 실시간 보고서에서 페이지뷰 수신 확인 |
 | REQ-FUNC-072 | EXCLUDED | Editor/Admin 콘텐츠 CRUD·미리보기는 전체 콘텐츠 CMS 제외 범위에 해당 | 해당 없음 |
 | REQ-FUNC-073 | EXCLUDED | 미디어 업로드 시 출처·작가·라이선스 필수 입력은 미디어 업로드·라이선스 워크플로 제외 범위에 해당 | 해당 없음 |
 | REQ-FUNC-074 | IMPLEMENT(변형) | 관리자 UI 대신 정적 데이터 필수 필드 검증 스크립트/테스트로 게시 전 완전성 검사 수행 | 데이터 검증 스크립트: 누락 목록 반환 |
