@@ -19,6 +19,8 @@
 
 - REQ-FUNC-064
 - REQ-FUNC-065
+- REQ-FUNC-071(GA4 페이지뷰 추적 — 사용자 요청으로 EXCLUDED→IMPLEMENT(변형) 갱신,
+  `docs/PROJECT_SCOPE.md` 참고. RootLayout에 `next/script`로 추가했다)
 - REQ-FUNC-079
 - REQ-NF-023
 

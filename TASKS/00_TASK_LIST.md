@@ -73,7 +73,7 @@ Task 수(73개)는 참고 수치이며 완료 조건으로 사용하지 않는�
 
 | Seq | Task ID | 제목 | Implementation Status | Requirement Ref | Screen | Route | Page Entry | Depends On | Priority |
 |---:|---|---|---|---|---|---|---|---|---|
-| 1 | COMP-GLOBAL-SHELL | 전역 Header/Footer/RootLayout 조립 | IMPLEMENT | REQ-FUNC-064<br>REQ-FUNC-065<br>REQ-FUNC-079<br>REQ-NF-023 | COMMON | 전체 5개 Route | — | — | Must |
+| 1 | COMP-GLOBAL-SHELL | 전역 Header/Footer/RootLayout 조립 | IMPLEMENT | REQ-FUNC-064<br>REQ-FUNC-065<br>REQ-FUNC-071<br>REQ-FUNC-079<br>REQ-NF-023 | COMMON | 전체 5개 Route | — | — | Must |
 | 2 | COMP-GLOBAL-SEO-METADATA | 페이지별 SEO 메타데이터 유틸 | IMPLEMENT | REQ-FUNC-070<br>REQ-NF-030 | COMMON | 전체 5개 Route | — | COMP-GLOBAL-SHELL | Must |
 | 3 | COMP-GLOBAL-TOAST | 전역 Toast/화면 상태 알림 컴포넌트 | IMPLEMENT(변형) | REQ-FUNC-043 | COMMON | 전체 5개 Route | — | COMP-GLOBAL-SHELL | Must |
 | 4 | COMP-SCR001-HERO-SEARCH | SCR-001 검색 Hero | IMPLEMENT | REQ-FUNC-003<br>REQ-FUNC-067 | SCR-001 | / | — | COMP-GLOBAL-SHELL | Must |
